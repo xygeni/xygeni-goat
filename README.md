@@ -71,25 +71,25 @@ iwr https://get.xygeni.io/latest/scanner/powershell -useb -OutFile install.ps1
 PS .\install.ps1 -q -t $TOKEN --dir ~\my-custom-scanner-dir
 ```
 
+See [Xygeni Scanner Install](https://docs.xygeni.io/scanner/install_script.html) for full details.
+
 3. Run the scanner over the contents in the `vulnerable` directory, or any subdirectory beneath for a partial analysis. 
 
-Under Linux / macOS (bash):
-
 ```shell
-pushd $HOME/my-custom-scanner-dir
+cd $HOME/my-custom-scanner-dir
 deps-doctor scan -n <your_project_name> --dir <path_to_analyze> --no-upload
 ```
 
 Under Windows (Powershell)
 ```powershell
-
+cd ~\my-custom-scanner-dir
+deps-doctor.cmd scan -n <your_project_name> --dir <path_to_analyze> --no-upload
 ```
 
-Or, if you prefer to run the [Xygeni scanner Docker image]():
+Or, if you prefer to run the [Xygeni scanner Docker image](https://docs.xygeni.io/integrations/docker/docker.html):
 ```shell
 docker compose run depsdoctor scan -n project_to_scan_name --dir /app --no-upload
 ```
-
 
 ## Contributing
 
