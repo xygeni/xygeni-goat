@@ -1,0 +1,16 @@
+= Capture The Flag Challenges
+:toc: left
+:icons: font
+
+== Shear the Goat
+lorem ipsum dolor sit amet, consectetur adipiscing elit <1>
+
+== So you captured the flag...
+
+== Challenges
+
+=== Unsafe GitHub workflow
+
+=== Hardcoded secret
+
+=== Insecure AWS resource
