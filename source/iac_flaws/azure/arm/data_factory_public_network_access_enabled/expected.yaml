@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: data_factory_public_network_access_enabled
+  endLine: 16
+  explanation: Azure Data factory public network access enabled
+  file: data_factory_public_network_access_enabled/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

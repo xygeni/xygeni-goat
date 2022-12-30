@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: sql_server_auditing_enabled
+  endLine: 10
+  explanation: Azure SQL server auditing is disabled
+  file: sql_server_auditing_enabled/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

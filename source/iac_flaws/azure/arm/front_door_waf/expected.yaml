@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: front_door_waf
+  endLine: 22
+  explanation: Azure front door does not have WAF enabled
+  file: front_door_waf/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

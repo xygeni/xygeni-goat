@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: azure_defender_on_app_services
+  endLine: 11
+  explanation: Azure Security Center Defender is off for AppServices
+  file: azure_defender_on_app_services/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.AppServices

@@ -1,0 +1,10 @@
+fail:
+- beginLine: 5
+  detector: storage_accounts_minimum_tls_version
+  endLine: 26
+  explanation: Storage account does not use the latest version of TLS encryption -
+    TLS version 1.0 lower than required 1.2 minimum
+  file: storage_accounts_minimum_tls_version/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

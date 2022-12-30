@@ -1,0 +1,9 @@
+fail:
+- beginLine: 11
+  detector: sql_server_no_public_access
+  endLine: 20
+  explanation: SQL databases allow ingress from 0.0.0.0/0
+  file: sql_server_no_public_access/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.server/bad

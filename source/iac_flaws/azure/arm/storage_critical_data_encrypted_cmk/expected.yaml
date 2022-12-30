@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: storage_critical_data_encrypted_cmk
+  endLine: 17
+  explanation: Storage for critical data not encrypted with Customer Managed Key
+  file: storage_critical_data_encrypted_cmk/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

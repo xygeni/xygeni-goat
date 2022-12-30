@@ -1,0 +1,9 @@
+fail:
+- beginLine: 11
+  detector: storage_blob_service_container_private_access
+  endLine: 18
+  explanation: Public access level for Blob Containers is not set to private
+  file: storage_blob_service_container_private_access/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.storage account/anonymous

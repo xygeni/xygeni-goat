@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: mariadb_ssl_enforcement_enabled
+  endLine: 16
+  explanation: Azure MariaDB database server with SSL connection disabled
+  file: mariadb_ssl_enforcement_enabled/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad
