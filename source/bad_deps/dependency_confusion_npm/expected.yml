@@ -1,0 +1,5 @@
+fail:
+  - dependency: "jquery.js: 0.0.2-security"
+    detector: dependency_confusion
+    direct_dependency: true
+    file: package.json

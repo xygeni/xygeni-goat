@@ -1,0 +1,5 @@
+fail:
+  - dependency: "@behemothx00/cacademee:0.0.1-security"
+    detector: anomaly
+    direct_dependency: true
+    file: package.json

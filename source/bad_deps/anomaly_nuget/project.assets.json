@@ -1,0 +1,54 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "DateApi/1.0.0.1": {
+        "type": "package"
+      }
+    }
+  },
+  "libraries": {
+    "DateApi/1.0.0.1": {
+      "type": "package",
+      "path": "DateApi/1.0.0.1"
+    }
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\temp\\ImportTarget\\Anomaly\\Anomaly\\Anomaly.csproj",
+      "projectName": "Anomaly",
+      "projectPath": "D:\\temp\\ImportTarget\\Anomaly\\Anomaly\\Anomaly.csproj",
+      "outputPath": "D:\\temp\\ImportTarget\\Anomaly\\Anomaly\\obj\\",
+      "projectStyle": "PackageReference",
+      "originalTargetFrameworks": [
+        "netstandard1.4"
+      ],
+      "files": {
+        "lib/netstandard1.4/Anomaly.dll": "D:\\temp\\ImportTarget\\Anomaly\\Anomaly\\bin\\placeholder\\netstandard1.4\\Anomaly.dll"
+      },
+      "frameworks": {
+        "netstandard1.4": {
+          "projectReferences": {
+            "D:\\temp\\ImportTarget\\Anomaly\\Anomaly\\Anomaly.csproj": {
+              "projectPath": "D:\\temp\\ImportTarget\\Anomaly\\Anomaly\\Anomaly.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "netstandard1.4": {
+        "dependencies": {
+          "NETStandard.Library": {
+            "target": "Package",
+            "version": "1.6"
+          }
+        },
+        "centralPackageVersions": {
+          "Newtonsoft.Json": "[12.0.3, )"
+        }
+      }
+    }
+  }
+}

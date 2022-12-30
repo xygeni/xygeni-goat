@@ -1,0 +1,9 @@
+fail:
+  - dependency: "requests3==0.0.0"
+    detector: typosquatting
+    direct_dependency: true
+    file: bad/setup.py
+pass:
+  - dependency: "requests==2.28.1"
+    direct_dependency: true
+    file: good/setup.py
