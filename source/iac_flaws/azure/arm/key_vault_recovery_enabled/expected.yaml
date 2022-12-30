@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: key_vault_recovery_enabled
+  endLine: 14
+  explanation: Azure key vault is not recoverable
+  file: key_vault_recovery_enabled/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

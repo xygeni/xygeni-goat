@@ -1,0 +1,10 @@
+fail:
+- beginLine: 5
+  detector: front_door_waf_policy
+  endLine: 14
+  explanation: Azure front door does not use WAF in Detection or Prevention modes
+    - FrontDoor Firewall Policy is not enabled
+  file: front_door_waf_policy/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

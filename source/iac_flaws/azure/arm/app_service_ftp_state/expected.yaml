@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: app_service_ftp_state
+  endLine: 18
+  explanation: Azure App Services FTP deployment is AllAllowed
+  file: app_service_ftp_state/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

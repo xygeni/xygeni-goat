@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: key_vault_key_backed_hsm
+  endLine: 13
+  explanation: Key vault key is not backed by HSM
+  file: key_vault_key_backed_hsm/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

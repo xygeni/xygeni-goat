@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [{
+    "name": "good",
+    "type": "Microsoft.Compute/disks",
+    "location": "[resourceGroup().location]",
+    "apiVersion": "2021-04-01",
+    "tags": {
+      "displayName": "Clone Disk"
+    },
+    "properties": {
+      "creationData": {
+        "createOption": "copy",
+        "sourceUri": "[resourceId('Microsoft.Compute/snapshots', concat(variables('Front VM'), '-snapshot'))]"
+      },
+      "encryptionSettings": {
+        "enabled": true,
+        "diskEncryptionKey": {
+          "sourceVault": {
+            "id": "[parameters('keyVaultResourceID')]"
+          },
+          "secretUrl": "[parameters('keyVaultSecretUrl')]"
+        },
+        "keyEncryptionKey": {
+          "sourceVault": {
+            "id": "[parameters('kekVaultResourceID')]"
+          },
+          "keyUrl": "[parameters('kekUrl')]"
+        }
+      }
+    }
+  }]
+}

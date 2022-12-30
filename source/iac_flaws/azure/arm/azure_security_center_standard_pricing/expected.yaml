@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: azure_security_center_standard_pricing
+  endLine: 11
+  explanation: Ensure that standard pricing tier is selected
+  file: azure_security_center_standard_pricing/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.VirtualMachines

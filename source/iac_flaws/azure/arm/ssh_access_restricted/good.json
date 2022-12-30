@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [{
+    "name": "good",
+    "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+    "location": "[resourceGroup().location]",
+    "apiVersion": "2021-04-01",
+    "properties": {
+      "protocol": "tcp",
+      "sourcePortRange": "*",
+      "destinationPortRange": "443",
+      "sourceAddressPrefix": "[parameters('ipRange')]",
+      "destinationAddressPrefix": "[parameters('addressPrefix')]",
+      "access": "Allow",
+      "priority": 100,
+      "direction": "Inbound"
+    }
+  }]
+}

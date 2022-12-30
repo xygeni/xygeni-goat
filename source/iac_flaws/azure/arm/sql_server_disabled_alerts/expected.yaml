@@ -1,0 +1,10 @@
+fail:
+- beginLine: 13
+  detector: sql_server_disabled_alerts
+  endLine: 21
+  explanation: Azure SQL Server threat detection alerts are not enabled for all threat
+    types
+  file: sql_server_disabled_alerts/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad/Default

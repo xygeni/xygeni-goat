@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: azure_scale_password_authentication
+  endLine: 56
+  explanation: Azure Linux scale uses password authentication
+  file: azure_scale_password_authentication/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad
