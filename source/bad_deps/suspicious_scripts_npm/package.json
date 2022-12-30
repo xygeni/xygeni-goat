@@ -1,0 +1,11 @@
+{
+  "name": "@myorg/suspicious_scripts",
+  "version": "1.0.0",
+  "readme": "ansi-regex@5.0.1 (no indirect deps), ansi-readline@1.0.0 ()",
+  "engines": {
+    "node": "^12.13.0 || ^14.15.0 || >=16"
+  },
+  "dependencies": {
+    "pypi": "0.1.2"
+  }
+}
