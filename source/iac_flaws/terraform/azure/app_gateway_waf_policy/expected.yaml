@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: app_gateway_waf_policy
+  endLine: 8
+  explanation: Azure WAF policy disabled or without Detection or Prevention modes
+    - Web Application Firewall Policy is not enabled
+  file: app_gateway_waf_policy/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_web_application_firewall_policy.bad.policy_settings

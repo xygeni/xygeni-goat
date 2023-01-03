@@ -1,0 +1,19 @@
+fail:
+- beginLine: 15
+  detector: sql_server_auditing_retention
+  endLine: 15
+  explanation: Azure SQL server audit log retention is too low - Retention days 6
+    lower than minimum 90 days required
+  file: sql_server_auditing_retention/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_mssql_server.deprecated_too_short
+- beginLine: 33
+  detector: sql_server_auditing_retention
+  endLine: 33
+  explanation: Azure SQL server audit log retention is too low - Retention days 6
+    lower than minimum 90 days required
+  file: sql_server_auditing_retention/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_mssql_server.too_short

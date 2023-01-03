@@ -1,0 +1,18 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::SecretsManager::Secret",
+      "Properties": {
+        "Name": "MySecretForAppB",
+        "Description": "This secret has a hardcoded password in SecretString (use GenerateSecretString instead)",
+        "KmsKeyId" : "KMS-KEY-ARN",
+        "Tags": [
+          {
+            "Key": "AppName",
+            "Value": "AppB"
+          }
+        ]
+      }
+    }
+  }
+}

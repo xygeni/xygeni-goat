@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: codebuild_project_encryption_disabled
+  endLine: 5
+  explanation: CodeBuild Project encryption is disabled
+  file: codebuild_project_encryption_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_codebuild_project.fail

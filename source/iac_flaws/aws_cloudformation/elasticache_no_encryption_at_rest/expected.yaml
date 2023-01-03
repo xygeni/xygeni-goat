@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: elasticache_no_encryption_at_rest
+  endLine: 3
+  explanation: AWS ElastiCache Redis cluster with encryption for data at rest is disabled
+  file: elasticache_no_encryption_at_rest/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

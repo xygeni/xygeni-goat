@@ -1,0 +1,18 @@
+fail:
+- beginLine: 8
+  detector: ecr_image_scan_disabled
+  endLine: 8
+  explanation: ECR image scan on push is disabled
+  file: ecr_image_scan_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_ecr_repository.bad
+- beginLine: 12
+  detector: ecr_image_scan_disabled
+  endLine: 17
+  explanation: ECR image scan on push is disabled - no image_scanning_configuration
+    block
+  file: ecr_image_scan_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_ecr_repository.bad2

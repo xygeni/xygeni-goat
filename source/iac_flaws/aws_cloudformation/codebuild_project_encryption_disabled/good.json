@@ -1,0 +1,15 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::CodeBuild::Project",
+      "Properties": {
+        "Artifacts": {
+          "EncryptionDisabled": false,
+          "Location": "MyS3BucketName",
+          "Name": "/",
+          "Type": "S3"
+        }
+      }
+    }
+  }
+}

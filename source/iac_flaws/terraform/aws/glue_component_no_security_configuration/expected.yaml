@@ -1,0 +1,25 @@
+fail:
+- beginLine: 3
+  detector: glue_component_no_security_configuration
+  endLine: 7
+  explanation: Glue component has a security configuration associated
+  file: glue_component_no_security_configuration/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_glue_crawler.default
+- beginLine: 9
+  detector: glue_component_no_security_configuration
+  endLine: 12
+  explanation: Glue component has a security configuration associated
+  file: glue_component_no_security_configuration/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_glue_dev_endpoint.default
+- beginLine: 14
+  detector: glue_component_no_security_configuration
+  endLine: 21
+  explanation: Glue component has a security configuration associated
+  file: glue_component_no_security_configuration/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_glue_job.default

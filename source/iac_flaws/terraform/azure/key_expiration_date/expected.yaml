@@ -1,0 +1,9 @@
+fail:
+- beginLine: 42
+  detector: key_expiration_date
+  endLine: 57
+  explanation: Ensure all keys have an expiration date
+  file: key_expiration_date/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_key_vault_key.bad

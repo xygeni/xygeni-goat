@@ -1,0 +1,9 @@
+fail:
+- beginLine: 42
+  detector: secret_expiration_date
+  endLine: 47
+  explanation: Ensure all secrets have an expiration date
+  file: secret_expiration_date/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_key_vault_secret.bad

@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: athena_workgroup_enforces_configuration
+  endLine: 19
+  explanation: Ensure Athena Workgroup should enforce configuration to prevent client
+    disabling encryption
+  file: athena_workgroup_enforces_configuration/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

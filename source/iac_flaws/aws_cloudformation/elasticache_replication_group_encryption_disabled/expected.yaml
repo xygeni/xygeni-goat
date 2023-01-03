@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: elasticache_replication_group_encryption_disabled
+  endLine: 5
+  explanation: Ensure all data stored in the Elasticache Replication Group is securely
+    encrypted at transit
+  file: elasticache_replication_group_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

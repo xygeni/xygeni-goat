@@ -1,0 +1,19 @@
+fail:
+- beginLine: 35
+  detector: azure_managed_disc_encryption
+  endLine: 37
+  explanation: Azure VM data disk is encrypted with the default encryption key instead
+    of ADE/CMK
+  file: azure_managed_disc_encryption/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_managed_disk.fail
+- beginLine: 49
+  detector: azure_managed_disc_encryption
+  endLine: 51
+  explanation: Azure VM data disk is encrypted with the default encryption key instead
+    of ADE/CMK
+  file: azure_managed_disc_encryption/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_managed_disk.fail2

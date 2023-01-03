@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: neptune_cluster_storage_encryption_disabled
+  endLine: 3
+  explanation: Ensure Neptune storage is securely encrypted
+  file: neptune_cluster_storage_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

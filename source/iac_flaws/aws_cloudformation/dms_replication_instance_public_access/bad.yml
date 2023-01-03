@@ -1,0 +1,6 @@
+Resources:
+  Bad:
+    Type: AWS::DMS::ReplicationInstance
+    Properties:
+      PubliclyAccessible: true
+      ReplicationInstanceClass: dms.c4.large

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: eks_node_group_remote_access
+  endLine: 18
+  explanation: Ensure AWS EKS node group does not have implicit SSH access from 0.0.0.0/0
+  file: eks_node_group_remote_access/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

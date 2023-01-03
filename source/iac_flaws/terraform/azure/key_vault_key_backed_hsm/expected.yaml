@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: key_vault_key_backed_hsm
+  endLine: 4
+  explanation: Key vault key is not backed by HSM
+  file: key_vault_key_backed_hsm/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_key_vault_key.fail

@@ -1,0 +1,18 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::ECS::TaskDefinition",
+      "Properties": {
+        "Volumes": [
+          {
+            "Name": "MyVolume",
+            "EFSVolumeConfiguration": {
+              "FilesystemId": "FilesystemId",
+              "TransitEncryption": "ENABLED"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

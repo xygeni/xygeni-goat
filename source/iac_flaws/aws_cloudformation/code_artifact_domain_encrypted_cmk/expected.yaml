@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: code_artifact_domain_encrypted_cmk
+  endLine: 5
+  explanation: Ensure Code artifact Domain is encrypted by KMS using a customer managed
+    Key (CMK)
+  file: code_artifact_domain_encrypted_cmk/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

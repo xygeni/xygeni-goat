@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: glue_data_catalog_encryption_disabled
+  endLine: 9
+  explanation: Ensure Glue Data Catalog Encryption is enabled
+  file: glue_data_catalog_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

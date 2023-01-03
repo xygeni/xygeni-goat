@@ -1,0 +1,33 @@
+fail:
+- beginLine: 1
+  detector: azure_defender_on_servers
+  endLine: 4
+  explanation: Azure Security Center Defender is off for servers
+  file: azure_defender_on_servers/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_security_center_subscription_pricing.bad
+- beginLine: 6
+  detector: azure_defender_on_servers
+  endLine: 9
+  explanation: Azure Security Center Defender is off for servers
+  file: azure_defender_on_servers/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_security_center_subscription_pricing.bad_1
+- beginLine: 12
+  detector: azure_defender_on_servers
+  endLine: 16
+  explanation: Azure Security Center Defender is off for servers
+  file: azure_defender_on_servers/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_security_center_subscription_pricing.bad_2
+- beginLine: 18
+  detector: azure_defender_on_servers
+  endLine: 21
+  explanation: Azure Security Center Defender is off for servers
+  file: azure_defender_on_servers/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_security_center_subscription_pricing.bad_3

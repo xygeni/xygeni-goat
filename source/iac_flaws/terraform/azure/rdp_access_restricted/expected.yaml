@@ -1,0 +1,57 @@
+fail:
+- beginLine: 3
+  detector: rdp_access_restricted
+  endLine: 16
+  explanation: RDP Internet access is not restricted
+  file: rdp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_rule.rdp
+- beginLine: 18
+  detector: rdp_access_restricted
+  endLine: 29
+  explanation: RDP Internet access is not restricted
+  file: rdp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_rule.all
+- beginLine: 31
+  detector: rdp_access_restricted
+  endLine: 42
+  explanation: RDP Internet access is not restricted
+  file: rdp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_rule.range
+- beginLine: 44
+  detector: rdp_access_restricted
+  endLine: 63
+  explanation: RDP Internet access is not restricted
+  file: rdp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_rule.ranges_prefixes
+- beginLine: 70
+  detector: rdp_access_restricted
+  endLine: 82
+  explanation: RDP Internet access is not restricted
+  file: rdp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_group.ranges
+- beginLine: 87
+  detector: rdp_access_restricted
+  endLine: 106
+  explanation: RDP Internet access is not restricted
+  file: rdp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_rule.ranges_prefixes_lower_case
+- beginLine: 108
+  detector: rdp_access_restricted
+  endLine: 119
+  explanation: RDP Internet access is not restricted
+  file: rdp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_rule.range_prefix_lower_case

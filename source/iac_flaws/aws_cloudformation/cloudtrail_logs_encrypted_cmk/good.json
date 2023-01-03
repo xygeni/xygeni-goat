@@ -1,0 +1,12 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::CloudTrail::Trail",
+      "Properties": {
+        "KMSKeyId": {
+          "Ref": "CloudtrailKMSKeyAlias"
+        }
+      }
+    }
+  }
+}

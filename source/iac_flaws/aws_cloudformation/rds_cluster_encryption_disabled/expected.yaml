@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: rds_cluster_encryption_disabled
+  endLine: 9
+  explanation: AWS RDS DB cluster encryption is disabled
+  file: rds_cluster_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

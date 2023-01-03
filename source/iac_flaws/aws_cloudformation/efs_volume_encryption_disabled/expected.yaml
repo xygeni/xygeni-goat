@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: efs_volume_encryption_disabled
+  endLine: 10
+  explanation: Ensure EFS is securely encrypted
+  file: efs_volume_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

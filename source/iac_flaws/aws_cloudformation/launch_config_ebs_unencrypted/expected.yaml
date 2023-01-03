@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: launch_config_ebs_unencrypted
+  endLine: 15
+  explanation: Launch configurations do not have encrypted EBS volumes
+  file: launch_config_ebs_unencrypted/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

@@ -1,0 +1,25 @@
+fail:
+- beginLine: 1
+  detector: app_service_identity
+  endLine: 6
+  explanation: App Service is not registered with an Azure Active Directory account
+  file: app_service_identity/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_app_service.fail
+- beginLine: 8
+  detector: app_service_identity
+  endLine: 17
+  explanation: App Service is not registered with an Azure Active Directory account
+  file: app_service_identity/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_linux_web_app.fail
+- beginLine: 19
+  detector: app_service_identity
+  endLine: 28
+  explanation: App Service is not registered with an Azure Active Directory account
+  file: app_service_identity/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_windows_web_app.fail

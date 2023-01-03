@@ -1,0 +1,15 @@
+Resources:
+  Bad:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-989491289078sad
+      UserData:
+        Fn::Base64:
+          !Sub |
+          #! /bin/bash
+          sudo apt-get update
+          sudo apt-get install -y apache2
+          sudo systemctl start apache2
+          sudo systemctl enable apache2
+          export AWS_ACCESS_KEY_ID=AKIAIOSTHEDUMMYTEST
+          echo "<h1>Deployed</h1>"

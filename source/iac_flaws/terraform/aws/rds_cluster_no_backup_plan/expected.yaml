@@ -1,0 +1,9 @@
+fail:
+- beginLine: 1
+  detector: rds_cluster_no_backup_plan
+  endLine: 9
+  explanation: RDS cluster without backup plan
+  file: rds_cluster_no_backup_plan/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_rds_cluster.rds_cluster_bad

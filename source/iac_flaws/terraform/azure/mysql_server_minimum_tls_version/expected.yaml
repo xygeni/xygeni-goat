@@ -1,0 +1,10 @@
+fail:
+- beginLine: 19
+  detector: mysql_server_minimum_tls_version
+  endLine: 19
+  explanation: MySQL is not using the latest version of TLS encryption - TLS version
+    1.1 lower than required 1.2 minimum
+  file: mysql_server_minimum_tls_version/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_mysql_server.bad

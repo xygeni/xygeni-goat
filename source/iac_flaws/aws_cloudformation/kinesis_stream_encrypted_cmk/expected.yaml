@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: kinesis_stream_encrypted_cmk
+  endLine: 7
+  explanation: Ensure Kinesis Stream is securely encrypted
+  file: kinesis_stream_encrypted_cmk/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

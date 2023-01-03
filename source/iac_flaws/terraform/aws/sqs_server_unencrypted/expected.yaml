@@ -1,0 +1,25 @@
+fail:
+- beginLine: 2
+  detector: sqs_server_unencrypted
+  endLine: 4
+  explanation: AWS SQS server side encryption is not enabled
+  file: sqs_server_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_sqs_queue.my_queue_fail
+- beginLine: 6
+  detector: sqs_server_unencrypted
+  endLine: 9
+  explanation: AWS SQS server side encryption is not enabled
+  file: sqs_server_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_sqs_queue.my_queue_fail2
+- beginLine: 11
+  detector: sqs_server_unencrypted
+  endLine: 14
+  explanation: AWS SQS server side encryption is not enabled
+  file: sqs_server_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_sqs_queue.my_queue_fail3

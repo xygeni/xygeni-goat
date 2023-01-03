@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: s3_bucket_acl_read_to_all
+  endLine: 5
+  explanation: S3 Bucket ACL allows public read access
+  file: s3_bucket_acl_read_to_all/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

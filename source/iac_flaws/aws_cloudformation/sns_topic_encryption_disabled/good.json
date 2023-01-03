@@ -1,0 +1,17 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::SNS::Topic",
+      "Properties": {
+        "Subscription": [
+          {
+            "Endpoint": "SNSEndpoint",
+            "Protocol": "sqs"
+          }
+        ],
+        "TopicName": "SampleTopic",
+        "KmsMasterKeyId": "kms_id"
+      }
+    }
+  }
+}

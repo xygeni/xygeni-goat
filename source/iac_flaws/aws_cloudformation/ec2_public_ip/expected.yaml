@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: ec2_public_ip
+  endLine: 11
+  explanation: EC2 instance should not have public IP
+  file: ec2_public_ip/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

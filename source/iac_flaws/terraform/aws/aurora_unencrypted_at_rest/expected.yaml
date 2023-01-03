@@ -1,0 +1,17 @@
+fail:
+- beginLine: 11
+  detector: aurora_unencrypted_at_rest
+  endLine: 11
+  explanation: Data stored in Aurora is unencrypted at rest
+  file: aurora_unencrypted_at_rest/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_rds_cluster.fail
+- beginLine: 15
+  detector: aurora_unencrypted_at_rest
+  endLine: 25
+  explanation: Data stored in Aurora is unencrypted at rest
+  file: aurora_unencrypted_at_rest/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_rds_cluster.fail_2

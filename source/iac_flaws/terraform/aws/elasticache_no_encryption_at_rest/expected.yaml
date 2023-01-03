@@ -1,0 +1,18 @@
+fail:
+- beginLine: 10
+  detector: elasticache_no_encryption_at_rest
+  endLine: 10
+  explanation: AWS ElastiCache Redis cluster with encryption for data at rest is disabled
+  file: elasticache_no_encryption_at_rest/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_elasticache_replication_group.fail
+- beginLine: 15
+  detector: elasticache_no_encryption_at_rest
+  endLine: 26
+  explanation: AWS ElastiCache Redis cluster with encryption for data at rest is disabled
+    - no at_rest_encryption_enabled attribute
+  file: elasticache_no_encryption_at_rest/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_elasticache_replication_group.fail_2

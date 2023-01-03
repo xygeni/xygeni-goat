@@ -1,0 +1,9 @@
+fail:
+- beginLine: 1
+  detector: sql_server_disabled_admin_email_alerts
+  endLine: 9
+  explanation: MSSQL servers do not have email service and co-administrators enabled
+  file: sql_server_disabled_admin_email_alerts/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_mssql_server_security_alert_policy.bad

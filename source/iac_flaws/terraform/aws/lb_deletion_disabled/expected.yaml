@@ -1,0 +1,35 @@
+fail:
+- beginLine: 3
+  detector: lb_deletion_disabled
+  endLine: 8
+  explanation: Load Balancer has deletion protection disabled - enable_deletion_protection
+    is false by default
+  file: lb_deletion_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_lb.default
+- beginLine: 10
+  detector: lb_deletion_disabled
+  endLine: 15
+  explanation: Load Balancer has deletion protection disabled - enable_deletion_protection
+    is false by default
+  file: lb_deletion_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_alb.default
+- beginLine: 23
+  detector: lb_deletion_disabled
+  endLine: 23
+  explanation: Load Balancer has deletion protection disabled
+  file: lb_deletion_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_lb.disabled
+- beginLine: 32
+  detector: lb_deletion_disabled
+  endLine: 32
+  explanation: Load Balancer has deletion protection disabled
+  file: lb_deletion_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_alb.disabled

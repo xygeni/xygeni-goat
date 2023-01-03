@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: elasticache_replication_group_encryption_auth_token
+  endLine: 5
+  explanation: Ensure all data stored in the Elasticache Replication Group is securely
+    encrypted at transit and has auth token
+  file: elasticache_replication_group_encryption_auth_token/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

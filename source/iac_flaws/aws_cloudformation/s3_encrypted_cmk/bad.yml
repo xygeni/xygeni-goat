@@ -1,0 +1,10 @@
+Resources:
+  Bad:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: !Sub 'encryptedbucket-${AWS::Region}-${AWS::AccountId}'
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: 'aws:kms'
+    DeletionPolicy: Delete
