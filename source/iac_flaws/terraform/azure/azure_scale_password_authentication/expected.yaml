@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: azure_scale_password_authentication
+  endLine: 4
+  explanation: Azure Linux scale uses password authentication
+  file: azure_scale_password_authentication/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_linux_virtual_machine_scale_set.fail

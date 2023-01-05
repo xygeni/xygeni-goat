@@ -1,0 +1,11 @@
+Resources:
+  Bad:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-989491289078sad
+      NetworkInterfaces:
+        - AssociatePublicIpAddress: true
+          DeviceIndex: "0"
+          GroupSet:
+            - "myVPCEC2SecurityGroup"
+          SubnetId: "PublicSubnet"

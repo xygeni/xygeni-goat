@@ -1,0 +1,6 @@
+Resources:
+  Bad:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: False

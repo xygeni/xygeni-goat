@@ -1,0 +1,20 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::Glue::DataCatalogEncryptionSettings",
+      "Properties": {
+        "CatalogId": "CatalogId",
+        "DataCatalogEncryptionSettings": {
+          "ConnectionPasswordEncryption": {
+            "KmsKeyId": "KmsKeyId",
+            "ReturnConnectionPasswordEncrypted": true
+          },
+          "EncryptionAtRest": {
+            "CatalogEncryptionMode": "SSE-KMS",
+            "SseAwsKmsKeyId": "SseAwsKmsKeyId"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+fail:
+- beginLine: 1
+  detector: app_service_https_redirects_only
+  endLine: 6
+  explanation: Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service
+  file: app_service_https_redirects_only/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_app_service.bad
+- beginLine: 13
+  detector: app_service_https_redirects_only
+  endLine: 13
+  explanation: Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service
+  file: app_service_https_redirects_only/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_app_service.bad_2

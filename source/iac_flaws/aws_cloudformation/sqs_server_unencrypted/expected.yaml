@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: sqs_server_unencrypted
+  endLine: 7
+  explanation: AWS SQS server side encryption is not enabled
+  file: sqs_server_unencrypted/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

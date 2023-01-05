@@ -1,0 +1,37 @@
+fail:
+- beginLine: 45
+  detector: app_gateway_waf
+  endLine: 98
+  explanation: Azure application gateway does not have WAF enabled - Web Application
+    Firewall is not enabled
+  file: app_gateway_waf/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_application_gateway.bad
+- beginLine: 100
+  detector: app_gateway_waf
+  endLine: 110
+  explanation: Azure application gateway does not have WAF enabled - azurerm_application_gateway
+    doesn't link a Web Application Firewall Policy
+  file: app_gateway_waf/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_application_gateway.bad_2
+- beginLine: 112
+  detector: app_gateway_waf
+  endLine: 122
+  explanation: Azure application gateway does not have WAF enabled - azurerm_application_gateway
+    doesn't link a Web Application Firewall Policy
+  file: app_gateway_waf/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_application_gateway.bad_3
+- beginLine: 124
+  detector: app_gateway_waf
+  endLine: 134
+  explanation: Azure application gateway does not have WAF enabled - azurerm_application_gateway
+    doesn't link a Web Application Firewall Policy
+  file: app_gateway_waf/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_application_gateway.bad_4

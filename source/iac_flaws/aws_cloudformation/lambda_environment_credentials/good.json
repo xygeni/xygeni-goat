@@ -1,0 +1,17 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Runtime": "nodejs12.x",
+        "Role": "arn:aws:iam::123456789012:role/lambda-role",
+        "Handler": "index.handler",
+        "Environment": {
+          "Variables": {
+            "var": "notasecret"
+          }
+        }
+      }
+    }
+  }
+}

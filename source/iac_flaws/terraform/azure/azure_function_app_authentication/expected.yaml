@@ -1,0 +1,17 @@
+fail:
+- beginLine: 1
+  detector: azure_function_app_authentication
+  endLine: 8
+  explanation: Azure function app authentication is off
+  file: azure_function_app_authentication/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_function_app.bad
+- beginLine: 18
+  detector: azure_function_app_authentication
+  endLine: 18
+  explanation: Azure function app authentication is off
+  file: azure_function_app_authentication/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_function_app.bad_2

@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: glue_security_conf_encryption_disabled
+  endLine: 7
+  explanation: Glue Security Configuration has encryption disabled - No valid encryption
+    in com.depsdoctor.iac.scanner.model.cf.element.CfResource@6b832551
+  file: glue_security_conf_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

@@ -1,0 +1,11 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::ElastiCache::ReplicationGroup",
+      "Properties": {
+        "TransitEncryptionEnabled": true,
+        "AuthToken": "MySecret!AuthToken$"
+      }
+    }
+  }
+}

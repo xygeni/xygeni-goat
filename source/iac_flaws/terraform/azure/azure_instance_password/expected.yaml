@@ -1,0 +1,17 @@
+fail:
+- beginLine: 32
+  detector: azure_instance_password
+  endLine: 32
+  explanation: Azure linux instance with password authentication
+  file: azure_instance_password/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_virtual_machine.bad
+- beginLine: 51
+  detector: azure_instance_password
+  endLine: 51
+  explanation: Azure linux instance with password authentication
+  file: azure_instance_password/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_linux_virtual_machine.bad_2

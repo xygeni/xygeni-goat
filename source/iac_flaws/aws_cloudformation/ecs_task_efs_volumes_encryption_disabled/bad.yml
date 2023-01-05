@@ -1,0 +1,8 @@
+Resources:
+  Bad:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      Volumes:
+        - Name: MyVolume
+          EFSVolumeConfiguration:
+            FilesystemId: FilesystemId

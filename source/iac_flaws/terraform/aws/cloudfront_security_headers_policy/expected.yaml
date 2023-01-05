@@ -1,0 +1,46 @@
+fail:
+- beginLine: 3
+  detector: cloudfront_security_headers_policy
+  endLine: 5
+  explanation: CloudFront distribution without strict security headers policy - no
+    response headers policy
+  file: cloudfront_security_headers_policy/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_cloudfront_distribution.no_response_headers_policy
+- beginLine: 15
+  detector: cloudfront_security_headers_policy
+  endLine: 17
+  explanation: CloudFront distribution without strict security headers policy - no
+    security headers policy
+  file: cloudfront_security_headers_policy/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_cloudfront_distribution.no_security_headers_config
+- beginLine: 52
+  detector: cloudfront_security_headers_policy
+  endLine: 56
+  explanation: CloudFront distribution without strict security headers policy - Header
+    xss_protection non-compliant
+  file: cloudfront_security_headers_policy/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_cloudfront_distribution.incorrect_security_headers_config
+- beginLine: 72
+  detector: cloudfront_security_headers_policy
+  endLine: 75
+  explanation: CloudFront distribution without strict security headers policy - Header
+    content_security_policy non-compliant
+  file: cloudfront_security_headers_policy/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_cloudfront_distribution.content_security_policy_missing_default_src_none
+- beginLine: 93
+  detector: cloudfront_security_headers_policy
+  endLine: 97
+  explanation: CloudFront distribution without strict security headers policy - Header
+    xss_protection non-compliant
+  file: cloudfront_security_headers_policy/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_cloudfront_distribution.content_security_policy_missing_default_src_none

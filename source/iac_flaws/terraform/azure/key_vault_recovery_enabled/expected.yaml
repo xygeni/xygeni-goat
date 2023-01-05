@@ -1,0 +1,19 @@
+fail:
+- beginLine: 2
+  detector: key_vault_recovery_enabled
+  endLine: 13
+  explanation: Azure key vault is not recoverable - Purge protection not enabled on
+    key vault 'my_key_vault'
+  file: key_vault_recovery_enabled/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_key_vault.bad_no_purge_protection
+- beginLine: 24
+  detector: key_vault_recovery_enabled
+  endLine: 24
+  explanation: Azure key vault is not recoverable - purge protection not enabled on
+    key vault 'my_key_vault'
+  file: key_vault_recovery_enabled/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_key_vault.bad_no_soft_delete

@@ -1,0 +1,10 @@
+Resources:
+  Bad:
+    Type: 'AWS::EFS::FileSystem'
+    Properties:
+      PerformanceMode: maxIO
+      LifecyclePolicies:
+        - TransitionToIA: AFTER_30_DAYS
+      FileSystemTags:
+        - Key: Name
+          Value: TestFileSystem

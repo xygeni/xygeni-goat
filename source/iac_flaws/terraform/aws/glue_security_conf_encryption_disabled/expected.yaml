@@ -1,0 +1,19 @@
+fail:
+- beginLine: 5
+  detector: glue_security_conf_encryption_disabled
+  endLine: 7
+  explanation: Glue Security Configuration has encryption disabled - No valid encryption
+    in cloudwatch_encryption
+  file: glue_security_conf_encryption_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_glue_security_configuration.fail.encryption_configuration.cloudwatch_encryption
+- beginLine: 9
+  detector: glue_security_conf_encryption_disabled
+  endLine: 11
+  explanation: Glue Security Configuration has encryption disabled - No valid encryption
+    in job_bookmarks_encryption
+  file: glue_security_conf_encryption_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_glue_security_configuration.fail.encryption_configuration.job_bookmarks_encryption

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 1
+  detector: no_healthcheck
+  endLine: 1
+  explanation: Healthcheck instructions have not been added to container image
+  file: no_healthcheck/bad/Dockerfile
+  framework: dockerfile
+  provider: docker
+  resource: ubuntu

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: timestream_db_encrypted_cmk
+  endLine: 5
+  explanation: Ensure that Timestream database is encrypted with KMS CMK
+  file: timestream_db_encrypted_cmk/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

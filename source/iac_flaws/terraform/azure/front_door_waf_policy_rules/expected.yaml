@@ -1,0 +1,45 @@
+fail:
+- beginLine: 3
+  detector: front_door_waf_policy_rules
+  endLine: 6
+  explanation: Front Door WAF has essential rules disabled - WAF policy empty
+  file: front_door_waf_policy_rules/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_frontdoor_firewall_policy.default
+- beginLine: 19
+  detector: front_door_waf_policy_rules
+  endLine: 23
+  explanation: Front Door WAF has essential rules disabled - JAVA group has essential
+    rule 944240 disabled or not Block/Redirect
+  file: front_door_waf_policy_rules/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_frontdoor_firewall_policy.dsr_1_1_disabled
+- beginLine: 39
+  detector: front_door_waf_policy_rules
+  endLine: 42
+  explanation: Front Door WAF has essential rules disabled - JAVA group has essential
+    rule 944240 disabled or not Block/Redirect
+  file: front_door_waf_policy_rules/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_frontdoor_firewall_policy.dsr_1_1_disabled_default
+- beginLine: 58
+  detector: front_door_waf_policy_rules
+  endLine: 62
+  explanation: Front Door WAF has essential rules disabled - JAVA group has essential
+    rule 944240 disabled or not Block/Redirect
+  file: front_door_waf_policy_rules/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_frontdoor_firewall_policy.dsr_1_1_enabled_allow
+- beginLine: 73
+  detector: front_door_waf_policy_rules
+  endLine: 73
+  explanation: Front Door WAF has essential rules disabled - Version 1.0 of Microsoft_DefaultRuleSet
+    managed ruleset does not contain essential rules
+  file: front_door_waf_policy_rules/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_frontdoor_firewall_policy.dsr_1_0

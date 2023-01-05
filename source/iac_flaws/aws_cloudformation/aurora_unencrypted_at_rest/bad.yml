@@ -1,0 +1,6 @@
+Resources:
+  Bad:
+    Type: 'AWS::RDS::DBCluster'
+    Properties:
+      DatabaseName: 'mydb'
+      Engine: 'aurora'

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: alb_uses_https
+  endLine: 12
+  explanation: Ensure ALB protocol is HTTPS
+  file: alb_uses_https/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

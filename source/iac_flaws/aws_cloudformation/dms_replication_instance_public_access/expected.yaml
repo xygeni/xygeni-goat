@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: dms_replication_instance_public_access
+  endLine: 6
+  explanation: DMS replication instance should not be publicly accessible
+  file: dms_replication_instance_public_access/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

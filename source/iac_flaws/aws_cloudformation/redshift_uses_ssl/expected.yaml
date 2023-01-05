@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: redshift_uses_ssl
+  endLine: 6
+  explanation: Ensure Redshift uses SSL
+  file: redshift_uses_ssl/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

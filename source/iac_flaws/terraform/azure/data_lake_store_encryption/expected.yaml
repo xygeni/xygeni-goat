@@ -1,0 +1,9 @@
+fail:
+- beginLine: 6
+  detector: data_lake_store_encryption
+  endLine: 6
+  explanation: Unencrypted Data Lake Store accounts
+  file: data_lake_store_encryption/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_data_lake_store.fail

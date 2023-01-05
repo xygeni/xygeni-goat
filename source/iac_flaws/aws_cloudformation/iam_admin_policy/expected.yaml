@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: iam_admin_policy
+  endLine: 19
+  explanation: IAM policy with full wildcard administrative privileges
+  file: iam_admin_policy/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

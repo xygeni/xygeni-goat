@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: glue_component_no_security_configuration
+  endLine: 6
+  explanation: Glue component has a security configuration associated
+  file: glue_component_no_security_configuration/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

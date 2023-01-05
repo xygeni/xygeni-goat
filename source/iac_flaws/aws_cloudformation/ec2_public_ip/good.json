@@ -1,0 +1,20 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-989491289078sad",
+        "NetworkInterfaces": [
+          {
+            "AssociatePublicIpAddress": false,
+            "DeviceIndex": "0",
+            "GroupSet": [
+              "myVPCEC2SecurityGroup"
+            ],
+            "SubnetId": "PublicSubnet"
+          }
+        ]
+      }
+    }
+  }
+}

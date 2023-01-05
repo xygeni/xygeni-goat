@@ -1,0 +1,9 @@
+fail:
+- beginLine: 21
+  detector: storage_blob_service_container_private_access
+  endLine: 21
+  explanation: Public access level for Blob Containers is not set to private
+  file: storage_blob_service_container_private_access/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_storage_container.bad

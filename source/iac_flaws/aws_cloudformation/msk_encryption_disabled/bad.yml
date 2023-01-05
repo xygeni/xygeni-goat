@@ -1,0 +1,8 @@
+Resources:
+  Bad:
+    Type: 'AWS::MSK::Cluster'
+    Properties:
+      ClusterName: ClusterWithAllProperties
+      KafkaVersion: 2.2.1
+      NumberOfBrokerNodes: 3
+      EnhancedMonitoring: PER_BROKER

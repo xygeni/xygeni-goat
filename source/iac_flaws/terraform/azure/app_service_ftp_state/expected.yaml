@@ -1,0 +1,33 @@
+fail:
+- beginLine: 8
+  detector: app_service_ftp_state
+  endLine: 8
+  explanation: Azure App Services FTP deployment is AllAllowed
+  file: app_service_ftp_state/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_app_service.fail
+- beginLine: 13
+  detector: app_service_ftp_state
+  endLine: 18
+  explanation: Azure App Services FTP deployment is AllAllowed
+  file: app_service_ftp_state/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_app_service.fail2
+- beginLine: 34
+  detector: app_service_ftp_state
+  endLine: 34
+  explanation: Azure App Services FTP deployment is AllAllowed
+  file: app_service_ftp_state/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_linux_web_app.fail
+- beginLine: 52
+  detector: app_service_ftp_state
+  endLine: 52
+  explanation: Azure App Services FTP deployment is AllAllowed
+  file: app_service_ftp_state/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_windows_web_app.fail

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 6
+  detector: mariadb_ssl_enforcement_enabled
+  endLine: 6
+  explanation: Azure MariaDB database server with SSL connection disabled
+  file: mariadb_ssl_enforcement_enabled/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_mariadb_server.bad

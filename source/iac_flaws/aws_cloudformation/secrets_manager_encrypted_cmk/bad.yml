@@ -1,0 +1,10 @@
+Resources:
+  Bad:
+    Type: 'AWS::SecretsManager::Secret'
+    Properties:
+      Name: MySecretForAppB
+      Description: This secret has a hardcoded password in SecretString (use GenerateSecretString instead)
+      SecretString: '{"username":"MasterUsername","password":"secret-password"}'
+      Tags:
+        - Key: AppName
+          Value: AppB

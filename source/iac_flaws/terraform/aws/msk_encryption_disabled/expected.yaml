@@ -1,0 +1,19 @@
+fail:
+- beginLine: 2
+  detector: msk_encryption_disabled
+  endLine: 13
+  explanation: MSK Cluster encryption at rest or in transit is disabled - no encryption
+    at rest / in transit
+  file: msk_encryption_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_msk_cluster.fail_no_encryption
+- beginLine: 23
+  detector: msk_encryption_disabled
+  endLine: 26
+  explanation: MSK Cluster encryption at rest or in transit is disabled - Insecure
+    encryption_in_transit settings
+  file: msk_encryption_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_msk_cluster.fail_insecure_encryption_in_transit

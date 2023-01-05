@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: aurora_unencrypted_at_rest
+  endLine: 6
+  explanation: Data stored in Aurora is unencrypted at rest
+  file: aurora_unencrypted_at_rest/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

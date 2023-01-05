@@ -1,0 +1,12 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::Elasticsearch::Domain",
+      "Properties": {
+        "NodeToNodeEncryptionOptions": {
+          "Enabled": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: iam_policy_allows_assume_across_services
+  endLine: 13
+  explanation: Ensure AWS IAM policy does not allow assume role permission across
+    all services
+  file: iam_policy_allows_assume_across_services/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad
