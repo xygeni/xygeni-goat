@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: api_server_encryption_providers
+  endLine: 4
+  explanation: Ensure that encryption providers are appropriately configured
+  file: api_server_encryption_providers/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

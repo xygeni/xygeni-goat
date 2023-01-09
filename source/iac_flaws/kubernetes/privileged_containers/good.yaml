@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: good
+spec:
+  containers:
+    - name: bad-container
+      image: <container-image>
+      securityContext:
+        privileged: false

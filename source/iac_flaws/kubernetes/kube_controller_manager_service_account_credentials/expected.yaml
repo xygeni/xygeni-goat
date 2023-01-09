@@ -1,0 +1,10 @@
+fail:
+- beginLine: 4
+  detector: kube_controller_manager_service_account_credentials
+  endLine: 4
+  explanation: Ensure that the --use-service-account-credentials argument is set to
+    true
+  file: kube_controller_manager_service_account_credentials/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

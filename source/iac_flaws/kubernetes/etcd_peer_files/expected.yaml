@@ -1,0 +1,10 @@
+fail:
+- beginLine: 4
+  detector: etcd_peer_files
+  endLine: 4
+  explanation: Ensure that the --peer-cert-file and --peer-key-file arguments are
+    set as appropriate
+  file: etcd_peer_files/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad
