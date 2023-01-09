@@ -1,0 +1,10 @@
+fail:
+- beginLine: 4
+  detector: api_server_tls_cert_and_key
+  endLine: 4
+  explanation: Ensure that the --tls-cert-file and --tls-private-key-file arguments
+    are set as appropriate
+  file: api_server_tls_cert_and_key/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

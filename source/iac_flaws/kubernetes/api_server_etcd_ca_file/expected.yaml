@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: api_server_etcd_ca_file
+  endLine: 4
+  explanation: Ensure that the --etcd-cafile argument is set as appropriate
+  file: api_server_etcd_ca_file/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

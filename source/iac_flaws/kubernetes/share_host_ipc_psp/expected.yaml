@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: share_host_ipc_psp
+  endLine: 4
+  explanation: Do not admit containers wishing to share the host IPC namespace
+  file: share_host_ipc_psp/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

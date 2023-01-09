@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: allowed_capabilities_sys_admin
+  endLine: 4
+  explanation: Do not use the CAP_SYS_ADMIN linux capability
+  file: allowed_capabilities_sys_admin/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad
