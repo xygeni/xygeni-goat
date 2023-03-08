@@ -58,7 +58,7 @@ curl -L https://get.xygeni.io/latest/scanner/bash -O install.sh
 
 # Check the scanner checksum published in xygeni.io website (separate environment), 
 # or better review the install script yourself ;)
-echo "$(curl https://xygeni.io/checksums/latest/scanner/bash.sha256) install.sh" | sha256sum --check
+echo "$(curl https://xygeni.io/hubfs/checksums/latest/scanner/install.sh.sha256) install.sh" | sha256sum --check
 
 # Run the install script, creating the scanner in your chosen directory
 $ ./install.sh -o -t $TOKEN --dir $HOME/my-custom-scanner-dir
@@ -74,7 +74,7 @@ iwr https://get.xygeni.io/latest/scanner/powershell -useb -OutFile install.ps1
 # Check the scanner checksum published in xygeni.io website, 
 # or better review the install script yourself ;)
 (Get-FileHash '.\install.ps1' -Algorithm SHA256).Hash -eq `
-  (iwr https://xygeni.io/checksums/latest/scanner/powershell.sha256)
+  (iwr https://xygeni.io/hubfs/checksums/latest/scanner/install.ps1.sha256)
   
 # Run the install script, creating the scanner in your chosen directory
 PS .\install.ps1 -q -t $TOKEN --dir ~\my-custom-scanner-dir
