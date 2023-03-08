@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: etcd_peer_client_cert_auth_enabled
+  endLine: 4
+  explanation: Ensure that the --peer-client-cert-auth argument is set to true
+  file: etcd_peer_client_cert_auth_enabled/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

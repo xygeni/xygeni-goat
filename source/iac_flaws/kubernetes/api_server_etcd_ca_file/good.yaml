@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: good
+spec:
+  containers:
+    - command:
+        - kube-apiserver
+        - --etcd-cafile
+        - --etcd-certfile=/path/to/cert
+        - --etcd-keyfile=/path/to/key
+      image: gcr.io/google_containers/kube-apiserver-amd64:v1.9.0
+      name: good-container
+      livenessProbe:
+        failureThreshold: 8
+        httpGet:
+          host: 127.0.0.1
+          path: /health
+          port: 6443
+          scheme: HTTPS
+        initialDelaySeconds: 15
+        timeoutSeconds: 15
+      resources:
+        requests:
+          cpu: 250m
+      volumeMounts:
+        - mountPath: /etc/kubernetes/
+          name: k8s
+          readOnly: true
+        - mountPath: /etc/ssl/certs
+          name: certs
+        - mountPath: /etc/pki
+          name: pki
+  hostNetwork: true
+  volumes:
+    - hostPath:
+        path: /etc/kubernetes
+      name: k8s
+    - hostPath:
+        path: /etc/ssl/certs
+      name: certs
+    - hostPath:
+        path: /etc/pki
+      name: pki

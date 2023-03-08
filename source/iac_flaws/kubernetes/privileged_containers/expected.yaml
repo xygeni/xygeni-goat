@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: privileged_containers
+  endLine: 4
+  explanation: Do not admit privileged containers
+  file: privileged_containers/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

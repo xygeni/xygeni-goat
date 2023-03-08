@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: api_server_insecure_bind_address
+  endLine: 4
+  explanation: Ensure that the --insecure-bind-address argument is not set
+  file: api_server_insecure_bind_address/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

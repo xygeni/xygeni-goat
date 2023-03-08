@@ -1,0 +1,10 @@
+fail:
+- beginLine: 4
+  detector: rbac_control_webhooks
+  endLine: 4
+  explanation: Minimize ClusterRoles that grant control over validating or mutating
+    admission webhook configurations
+  file: rbac_control_webhooks/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

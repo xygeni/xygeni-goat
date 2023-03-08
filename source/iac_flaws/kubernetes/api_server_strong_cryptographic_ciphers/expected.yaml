@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: api_server_strong_cryptographic_ciphers
+  endLine: 4
+  explanation: Ensure that the API Server only makes use of Strong Cryptographic Ciphers
+  file: api_server_strong_cryptographic_ciphers/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

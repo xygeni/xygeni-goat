@@ -1,0 +1,10 @@
+fail:
+- beginLine: 4
+  detector: api_server_etcd_cert_and_key
+  endLine: 4
+  explanation: Ensure that the --etcd-certfile and --etcd-keyfile arguments are set
+    as appropriate
+  file: api_server_etcd_cert_and_key/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

@@ -1,0 +1,17 @@
+apiVersion: policy/v1beta1
+kind: PodSecurityPolicy
+metadata:
+  name: good
+spec:
+  privileged: true
+  allowPrivilegeEscalation: true
+  allowedCapabilities:
+    - '*'
+  volumes:
+    - '*'
+  hostNetwork: true
+  hostPorts:
+    - min: 0
+      max: 65535
+  hostPID: false
+  hostIPC: false
