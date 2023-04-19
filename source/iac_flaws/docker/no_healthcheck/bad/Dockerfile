@@ -7,4 +7,4 @@ RUN apt clean
 
 EXPOSE 80
 
-CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+CMD ["apache2ctl", "-D", "FOREGROUND"]
