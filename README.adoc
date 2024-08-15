@@ -54,11 +54,12 @@ Under Linux / macOS (bash):
 [source,shell]
 ----
 # Download the install script
-curl -L https://get.xygeni.io/latest/scanner/bash -O install.sh
+curl -sLO https://get.xygeni.io/latest/scanner/install.sh
 
-# Check the scanner checksum published in xygeni.io website (separate environment), 
+# Check the scanner checksum published in xygeni GitHub repository (a separate environment from cloud),
 # or better review the install script yourself ;)
-echo "$(curl https://xygeni.io/hubfs/checksums/latest/scanner/install.sh.sha256) install.sh" | sha256sum --check
+echo "$(curl -s https://raw.githubusercontent.com/xygeni/xygeni/main/checksum/latest/install.sh.sha256) install.sh" | sha256sum --check
+# Under macOS, use shasum -a 256 --check instead if sha256sum is not installed
 
 # Run the install script, creating the scanner in your chosen directory
 $ ./install.sh -o -t $TOKEN --dir $HOME/my-custom-scanner-dir
@@ -69,16 +70,18 @@ Under Windows (PowerShell):
 [source,powershell]
 ----
 # Download the install script (via Invoke-WebRequest)
-iwr https://get.xygeni.io/latest/scanner/powershell -useb -OutFile install.ps1
+iwr https://get.xygeni.io/latest/scanner/install.ps1 -useb -OutFile install.ps1
 
-# Check the scanner checksum published in xygeni.io website, 
+# Check the scanner checksum published in xygeni GitHub repo,
 # or better review the install script yourself ;)
 (Get-FileHash '.\install.ps1' -Algorithm SHA256).Hash -eq `
-  (iwr https://xygeni.io/hubfs/checksums/latest/scanner/install.ps1.sha256)
-  
+  (iwr https://raw.githubusercontent.com/xygeni/xygeni/main/checksum/latest/install.ps1.sha256)
+
 # Run the install script, creating the scanner in your chosen directory
-PS .\install.ps1 -q -t $TOKEN --dir ~\my-custom-scanner-dir
+.\install.ps1 -o -verbose -t "$Env:XYGENI_TOKEN" -dir ~\my-custom-scanner-dir
 ----
+
+TIP: You may add a shortcut (using an alias, creating a link to the )
 
 See https://docs.xygeni.io/scanner/install_script.html[Xygeni Scanner Install] for full details.
 
@@ -88,7 +91,7 @@ Run the `scan` command over the contents in the `vulnerable` directory, or any s
 [source,shell]
 ----
 cd $HOME/my-custom-scanner-dir
-deps-doctor scan -n <your_project_name> --dir <path_to_analyze> --no-upload
+xygeni scan -n <your_project_name> --dir <path_to_analyze> --no-upload
 ----
 
 Under Windows (Powershell)
@@ -96,20 +99,20 @@ Under Windows (Powershell)
 [source,powershell]
 ----
 cd ~\my-custom-scanner-dir
-deps-doctor.cmd scan -n <your_project_name> --dir <path_to_analyze> --no-upload
+xygeni.cmd scan -n <your_project_name> --dir <path_to_analyze> --no-upload
 ----
 
 Or, if you prefer to run the https://docs.xygeni.io/integrations/docker/docker.html[Xygeni scanner Docker image]:
 
 [source,shell]
 ----
-docker compose run depsdoctor scan -n project_to_scan_name --dir /app --no-upload
+docker compose run xygeni scan -n project_to_scan_name --dir /app --no-upload
 ----
 
 == Contributing
 
 You may add your own vulnerable items to help others learn about additional security issues, and raise awareness on new potential attacks.
-We recommend you to keep the existing directory structure for better categorizing those security issues. 
+We recommend you to keep the existing directory structure for better categorizing those security issues. Pull Requests are welcomed !
 
 In addition, if you want to add a new "capture the flag" (CTF) check, you are welcome!
 
