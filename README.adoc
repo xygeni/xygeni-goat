@@ -16,7 +16,7 @@ Xygeni-goat helps to understand DevOps teams the best practices to follow and wh
 
 This repository is based on existing "Goat" projects, like OWASP https://github.com/WebGoat/WebGoat[WebGoat]. 
 
-Shear the (nefarious) goat!
+**Shear the (nefarious) goat !**
 
 *WARNING*: This repository is for educational purposes only. Do NOT attempt to use the techniques and items shown for unauthorized hacking. Do NOT deploy assets from this repository this in any environment.
 
@@ -36,11 +36,11 @@ gh repo clone xygeni/xygeni-goat
 
 === Get bearer token
 
-First you will need a bearer (API) token from your Xygeni subscription. #[TBD add link]#
+First you will need a bearer (API) token from your Xygeni subscription. Please follow the instructions in link:https://docs.xygeni.io/administration/administration.html#_generate_token_for_scanner[Generate Token for Scanner].
 
 We assume that you set a `TOKEN` environment variable with the token.
 
-NOTE: We do recommend to use API (bearer) token instead of username/password for using Xygeni scanner, although the installation script supports both.
+NOTE: We do recommend to use API (bearer) token instead of the (now deprecated) username/password for using Xygeni scanner, although the installation script supports both.
 
 
 === Install Xygeni scanner
