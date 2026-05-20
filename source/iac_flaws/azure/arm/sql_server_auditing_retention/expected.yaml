@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: sql_server_auditing_retention
+  endLine: 23
+  explanation: Azure SQL server audit log retention is too low
+  file: sql_server_auditing_retention/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

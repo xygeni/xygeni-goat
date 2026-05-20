@@ -1,0 +1,9 @@
+fail:
+- beginLine: 17
+  detector: azure_function_app_authentication
+  endLine: 24
+  explanation: Azure function app authentication is off
+  file: azure_function_app_authentication/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad/authsettings

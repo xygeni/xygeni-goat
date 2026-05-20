@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.KeyVault/vaults",
+      "apiVersion": "2017-08-01-preview",
+      "name": "good",
+      "location": "[parameters('location')]",
+      "properties": {
+        "enablePurgeProtection": true,
+        "enableSoftDelete": true
+      }
+    }
+  ]
+}

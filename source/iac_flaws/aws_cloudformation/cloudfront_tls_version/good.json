@@ -1,0 +1,17 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "Enabled": true,
+          "ViewerCertificate": {
+            "AcmCertificateArn": "cert-test",
+            "MinimumProtocolVersion": "TLSv1.2_2018",
+            "SslSupportMethod": "sni-only"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 10
+  detector: app_service_authentication
+  endLine: 17
+  explanation: Azure App Service Web app authentication is Off.
+  file: app_service_authentication/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad/authsettings

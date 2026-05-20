@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: workspace_root_volume_encryption_disabled
+  endLine: 7
+  explanation: Ensure that Workspace root volumes are encrypted
+  file: workspace_root_volume_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

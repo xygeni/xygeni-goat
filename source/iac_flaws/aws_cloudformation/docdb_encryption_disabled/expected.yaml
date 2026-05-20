@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: docdb_encryption_disabled
+  endLine: 7
+  explanation: Ensure DocDB is encrypted at rest
+  file: docdb_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

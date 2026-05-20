@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: secrets_manager_encrypted_cmk
+  endLine: 10
+  explanation: Secrets Manager secret is not encrypted using KMS CMK
+  file: secrets_manager_encrypted_cmk/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

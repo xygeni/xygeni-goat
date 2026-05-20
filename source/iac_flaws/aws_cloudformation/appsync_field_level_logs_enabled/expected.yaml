@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: appsync_field_level_logs_enabled
+  endLine: 9
+  explanation: Ensure AppSync has Field-Level logs enabled
+  file: appsync_field_level_logs_enabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

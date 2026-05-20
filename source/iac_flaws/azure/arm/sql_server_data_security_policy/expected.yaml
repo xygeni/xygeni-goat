@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: sql_server_data_security_policy
+  endLine: 12
+  explanation: SQL servers do not enable data security policy
+  file: sql_server_data_security_policy/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

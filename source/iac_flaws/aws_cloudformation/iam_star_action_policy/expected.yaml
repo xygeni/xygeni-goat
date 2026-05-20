@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: iam_star_action_policy
+  endLine: 18
+  explanation: IAM policies documents allow * as a statement's actions
+  file: iam_star_action_policy/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 13
+  detector: sql_server_disabled_email_alerts
+  endLine: 20
+  explanation: Ensure that 'Send Alerts To' is enabled for MSSQL servers
+  file: sql_server_disabled_email_alerts/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad/Default

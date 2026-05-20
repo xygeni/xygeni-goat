@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: aks_rbac_enabled
+  endLine: 15
+  explanation: Azure Kubernetes Cluster without RBAC enabled
+  file: aks_rbac_enabled/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

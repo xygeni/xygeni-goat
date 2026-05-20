@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: sql_server_minimum_tls_version
+  endLine: 3
+  explanation: SQL Server is not using the latest version of TLS encryption - TLS
+    version 1.1 lower than required 1.2 minimum
+  file: sql_server_minimum_tls_version/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_mssql_server.bad

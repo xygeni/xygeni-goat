@@ -1,0 +1,6 @@
+Resources:
+  Bad:
+    Type: AWS::RDS::DBInstance
+    DeletionPolicy: Snapshot
+    Properties:
+      AutoMinorVersionUpgrade: false

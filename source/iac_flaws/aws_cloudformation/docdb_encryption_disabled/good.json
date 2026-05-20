@@ -1,0 +1,12 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::DocDB::DBCluster",
+      "Properties": {
+        "MasterUsername": "<username>",
+        "MasterUserPassword": "<password>",
+        "StorageEncrypted": true
+      }
+    }
+  }
+}

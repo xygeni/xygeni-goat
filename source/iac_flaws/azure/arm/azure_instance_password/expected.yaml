@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: azure_instance_password
+  endLine: 45
+  explanation: Azure linux instance with password authentication
+  file: azure_instance_password/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

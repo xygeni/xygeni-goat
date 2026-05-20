@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: cloudtrail_logs_encrypted_cmk
+  endLine: 3
+  explanation: Ensure CloudTrail logs are encrypted at rest using KMS CMKs
+  file: cloudtrail_logs_encrypted_cmk/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

@@ -1,0 +1,5 @@
+fail:
+  - dependency: "DateApi:1.0.0.1"
+    detector: anomaly
+    direct_dependency: true
+    file: project.assets.json

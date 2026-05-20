@@ -1,0 +1,9 @@
+fail:
+- beginLine: 10
+  detector: ssh_port_exposed
+  endLine: 10
+  explanation: SSH port exposed
+  file: ssh_port_exposed/bad/Dockerfile
+  framework: dockerfile
+  provider: docker
+  resource: ubuntu:latest.EXPOSE

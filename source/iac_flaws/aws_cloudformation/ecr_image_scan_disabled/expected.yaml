@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: ecr_image_scan_disabled
+  endLine: 5
+  explanation: ECR image scan on push is disabled
+  file: ecr_image_scan_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

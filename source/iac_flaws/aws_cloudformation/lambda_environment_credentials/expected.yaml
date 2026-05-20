@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: lambda_environment_credentials
+  endLine: 10
+  explanation: 'Lambda function''s environment variables expose secrets - Found some
+    secrets in the resource: secret_key'
+  file: lambda_environment_credentials/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

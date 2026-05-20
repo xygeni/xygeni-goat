@@ -1,0 +1,10 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::Neptune::DBCluster",
+      "Properties": {
+        "StorageEncrypted": true
+      }
+    }
+  }
+}

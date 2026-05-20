@@ -1,0 +1,9 @@
+fail:
+- beginLine: 1
+  detector: aks_rbac_enabled
+  endLine: 3
+  explanation: Azure Kubernetes Cluster without RBAC enabled
+  file: aks_rbac_enabled/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_kubernetes_cluster.bad

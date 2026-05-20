@@ -1,0 +1,12 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::RDS::DBCluster",
+      "Properties": {
+        "DatabaseName": "mydb",
+        "Engine": "aurora",
+        "StorageEncrypted": true
+      }
+    }
+  }
+}

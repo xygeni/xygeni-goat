@@ -1,0 +1,11 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::CodeArtifact::Domain",
+      "Properties": {
+        "DomainName": "my-domain",
+        "EncryptionKey": "arn:aws:kms:us-east-2:123456:key/12345678-7tfj-dag2-2345-5678abcdef12"
+      }
+    }
+  }
+}

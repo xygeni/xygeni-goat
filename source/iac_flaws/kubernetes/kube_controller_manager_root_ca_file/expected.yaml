@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: kube_controller_manager_root_ca_file
+  endLine: 4
+  explanation: Ensure that the --root-ca-file argument is set as appropriate
+  file: kube_controller_manager_root_ca_file/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

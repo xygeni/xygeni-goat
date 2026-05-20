@@ -1,0 +1,8 @@
+Resources:
+  Bad:
+    Type: AWS::SNS::Topic
+    Properties:
+      Subscription:
+        - Endpoint: "SNSEndpoint"
+          Protocol: "sqs"
+      TopicName: "SampleTopic"

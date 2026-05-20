@@ -1,0 +1,14 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::SQS::Queue",
+      "Properties": {
+        "RedrivePolicy": {
+          "deadLetterTargetArn": "example_arn",
+          "maxReceiveCount": 5
+        },
+        "KmsMasterKeyId": "kms_id"
+      }
+    }
+  }
+}

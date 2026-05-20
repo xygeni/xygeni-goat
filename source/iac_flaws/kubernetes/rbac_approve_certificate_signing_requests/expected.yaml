@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: rbac_approve_certificate_signing_requests
+  endLine: 4
+  explanation: Minimize ClusterRoles that grant permissions to approve CertificateSigningRequests
+  file: rbac_approve_certificate_signing_requests/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

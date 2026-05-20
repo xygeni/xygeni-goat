@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: app_service_https_redirects_only
+  endLine: 11
+  explanation: Ensure web app redirects all HTTP traffic to HTTPS in Azure App Service
+  file: app_service_https_redirects_only/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

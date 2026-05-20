@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: good <1>
+spec:
+  template:
+    spec:
+      serviceAccountName: kube-apiserver
+      tolerations:
+        - key: node-role.kubernetes.io/master
+          operator: Exists
+          effect: NoSchedule
+      containers:
+        - name: kube-apiserver
+          image: k8s.gcr.io/kube-apiserver
+          command:
+            - kube-apiserver

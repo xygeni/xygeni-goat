@@ -1,0 +1,9 @@
+fail:
+- beginLine: 13
+  detector: sql_server_data_security_policy
+  endLine: 13
+  explanation: SQL servers do not enable data security policy
+  file: sql_server_data_security_policy/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_sql_server.sql_server_bad_1

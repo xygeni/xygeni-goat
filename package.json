@@ -1,0 +1,9 @@
+{
+  "name": "xygeni-demo-app",
+  "version": "1.0.0",
+  "description": "App vulneravel para demo S.I.Q",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "4.17.15" 
+  }
+}

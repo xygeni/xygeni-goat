@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: lb_use_tls
+  endLine: 9
+  explanation: Load balancer is using insecure TLS policy
+  file: lb_use_tls/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

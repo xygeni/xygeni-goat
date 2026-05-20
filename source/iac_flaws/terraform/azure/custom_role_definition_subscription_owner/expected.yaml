@@ -1,0 +1,25 @@
+fail:
+- beginLine: 6
+  detector: custom_role_definition_subscription_owner
+  endLine: 6
+  explanation: Azure subscriptions with custom roles are overly permissive
+  file: custom_role_definition_subscription_owner/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_role_definition.bad
+- beginLine: 20
+  detector: custom_role_definition_subscription_owner
+  endLine: 20
+  explanation: Azure subscriptions with custom roles are overly permissive
+  file: custom_role_definition_subscription_owner/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_role_definition.bad_2
+- beginLine: 34
+  detector: custom_role_definition_subscription_owner
+  endLine: 34
+  explanation: Azure subscriptions with custom roles are overly permissive
+  file: custom_role_definition_subscription_owner/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_role_definition.bad_3

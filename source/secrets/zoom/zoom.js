@@ -1,0 +1,1 @@
+var jwt = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6ImFmZzVLRUpjb1JwcWEzMWpvdlREQXdBIiwiZXhwIjoyODQ0ODAxOTQwLCJpYXQiOjI4NDQ4MDE5NDB9.jRdb39wAGbOnAknQyDiTYSkkUnJc_38lxo1C4a8Dpio"

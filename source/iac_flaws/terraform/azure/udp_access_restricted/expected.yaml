@@ -1,0 +1,41 @@
+fail:
+- beginLine: 6
+  detector: udp_access_restricted
+  endLine: 16
+  explanation: UDP Internet access is not restricted
+  file: udp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_group.bad
+- beginLine: 28
+  detector: udp_access_restricted
+  endLine: 38
+  explanation: UDP Internet access is not restricted
+  file: udp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_group.bad_2
+- beginLine: 50
+  detector: udp_access_restricted
+  endLine: 60
+  explanation: UDP Internet access is not restricted
+  file: udp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_group.bad_3
+- beginLine: 72
+  detector: udp_access_restricted
+  endLine: 82
+  explanation: UDP Internet access is not restricted
+  file: udp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_group.bad_4
+- beginLine: 94
+  detector: udp_access_restricted
+  endLine: 104
+  explanation: UDP Internet access is not restricted
+  file: udp_access_restricted/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_network_security_group.bad_5

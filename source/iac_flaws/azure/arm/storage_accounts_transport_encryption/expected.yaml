@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: storage_accounts_transport_encryption
+  endLine: 13
+  explanation: Secure transfer required is not enabled
+  file: storage_accounts_transport_encryption/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

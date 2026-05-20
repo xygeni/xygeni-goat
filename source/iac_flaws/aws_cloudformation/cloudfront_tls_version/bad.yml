@@ -1,0 +1,6 @@
+Resources:
+  Bad:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Enabled: true

@@ -1,0 +1,17 @@
+fail:
+- beginLine: 1
+  detector: data_factory_public_network_access_enabled
+  endLine: 5
+  explanation: Azure Data factory public network access enabled
+  file: data_factory_public_network_access_enabled/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_data_factory.fail
+- beginLine: 11
+  detector: data_factory_public_network_access_enabled
+  endLine: 11
+  explanation: Azure Data factory public network access enabled
+  file: data_factory_public_network_access_enabled/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_data_factory.fail2

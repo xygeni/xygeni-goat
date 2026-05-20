@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: elasticsearch_node_to_node_encryption_disabled
+  endLine: 3
+  explanation: Ensure all Elasticsearch has node-to-node encryption enabled
+  file: elasticsearch_node_to_node_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

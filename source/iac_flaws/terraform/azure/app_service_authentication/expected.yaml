@@ -1,0 +1,17 @@
+fail:
+- beginLine: 1
+  detector: app_service_authentication
+  endLine: 8
+  explanation: Azure App Service Web app authentication is Off.
+  file: app_service_authentication/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_app_service.bad
+- beginLine: 10
+  detector: app_service_authentication
+  endLine: 11
+  explanation: Azure App Service Web app authentication is Off.
+  file: app_service_authentication/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_app_service.bad_2

@@ -1,0 +1,16 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "example",
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": false
+        }
+      }
+    }
+  }
+}

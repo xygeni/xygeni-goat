@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: azure_instance_extensions
+  endLine: 29
+  explanation: Virtual Machine extensions are installed
+  file: azure_instance_extensions/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

@@ -1,0 +1,11 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::RDS::DBInstance",
+      "DeletionPolicy": "Snapshot",
+      "Properties": {
+        "AutoMinorVersionUpgrade": true
+      }
+    }
+  }
+}

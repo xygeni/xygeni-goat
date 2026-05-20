@@ -1,0 +1,6 @@
+Resources:
+  Bad:
+    Type: AWS::Redshift::ClusterParameterGroup
+    Properties:
+      Description: parameter group
+      ParameterGroupFamily: redshift-1.0

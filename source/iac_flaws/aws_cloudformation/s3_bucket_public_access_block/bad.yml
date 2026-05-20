@@ -1,0 +1,5 @@
+Resources:
+  Bad:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: 'example'

@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: iam_role_allows_public_assume
+  endLine: 13
+  explanation: Ensure IAM role allows only specific services or principals to assume
+    it
+  file: iam_role_allows_public_assume/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

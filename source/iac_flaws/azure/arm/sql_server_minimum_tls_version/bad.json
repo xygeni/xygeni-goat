@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.Sql/servers",
+      "apiVersion": "2015-05-01-preview",
+      "location": "[variables('databaseServerLocation')]",
+      "name": "bad",
+      "properties": {
+        "minimalTlsVersion": "1.0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Resources:
+  Bad:
+    Type: AWS::DocDB::DBClusterParameterGroup
+    Properties:
+      Description: docdb cluster parameter group
+      Family: docdb3.6
+      Name: test
+      Parameters:
+        tls: "disabled"
+        ttl_monitor: "enabled"

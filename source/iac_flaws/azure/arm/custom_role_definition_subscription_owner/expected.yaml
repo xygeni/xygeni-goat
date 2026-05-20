@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: custom_role_definition_subscription_owner
+  endLine: 22
+  explanation: Azure subscriptions with custom roles are overly permissive
+  file: custom_role_definition_subscription_owner/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

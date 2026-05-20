@@ -1,0 +1,10 @@
+fail:
+- beginLine: 4
+  detector: azure_managed_disc_encryption
+  endLine: 18
+  explanation: Azure VM data disk is encrypted with the default encryption key instead
+    of ADE/CMK
+  file: azure_managed_disc_encryption/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

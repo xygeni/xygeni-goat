@@ -1,0 +1,11 @@
+== Source directory
+
+This directory contains a curated list of different security issues that may be used by bad actors to launch a software supply chain attack.
+
+The sources listed here do not correspond to any real software. They are provided merely for illustrating vulnerable source code and configurations. Each subdirectory contains issues for a particular category.
+
+You may use to run security scanners and other tools, if you like, but the main goal is to help developers and DevOps staff to understand what are flaws in each category and how to fix them.
+
+*WARNING*: This repository is for educational purposes only. Do NOT attempt to use the techniques and items shown for unauthorized hacking. Do NOT deploy assets from this repository in any environment.
+
+*DISCLAIMER*: Xygeni-goat comes with no warranties. By using xygeni-goat, you take full responsibility for any outcomes. Xygeni would not be liable of any misuse of the information and assets contained in this repository.

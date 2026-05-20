@@ -1,0 +1,3 @@
+Resources:
+  Bad:
+    Type: 'AWS::ElastiCache::ReplicationGroup'

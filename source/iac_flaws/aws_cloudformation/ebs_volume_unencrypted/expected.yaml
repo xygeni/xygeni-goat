@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: ebs_volume_unencrypted
+  endLine: 7
+  explanation: AWS EBS volume is not encrypted
+  file: ebs_volume_unencrypted/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

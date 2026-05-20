@@ -1,0 +1,10 @@
+fail:
+- beginLine: 5
+  detector: app_service_minimum_tls_version
+  endLine: 17
+  explanation: Web App does not use the latest version of TLS encryption - TLS version
+    1.0 lower than required 1.2 minimum
+  file: app_service_minimum_tls_version/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

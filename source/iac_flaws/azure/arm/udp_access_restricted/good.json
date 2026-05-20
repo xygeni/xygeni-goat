@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "name": "good",
+      "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2019-11-01",
+      "properties": {
+        "protocol": "udp",
+        "destinationPortRange": "443",
+        "sourceAddressPrefix": "GatewayManager",
+        "access": "Allow",
+        "direction": "Inbound"
+      }
+    }
+  ]
+}

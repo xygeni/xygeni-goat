@@ -1,0 +1,9 @@
+Resources:
+  Bad:
+    Type: 'AWS::Glue::DataCatalogEncryptionSettings'
+    Properties:
+      CatalogId: "CatalogId"
+      DataCatalogEncryptionSettings:
+        ConnectionPasswordEncryption:
+          KmsKeyId: "KmsKeyId"
+          ReturnConnectionPasswordEncrypted: True

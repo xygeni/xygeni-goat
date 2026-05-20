@@ -1,0 +1,15 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "ImageId": "ami-989491289078sad",
+        "UserData": {
+          "Fn::Base64": {
+            "Fn::Sub": "#! /bin/bash\nsudo apt-get update\nsudo apt-get install -y apache2\nsudo systemctl start apache2\nsudo systemctl enable apache2\nexport AWS_DEFAULT_REGION=us-west-2\necho \"<h1>Deployed</h1>\""
+          }
+        }
+      }
+    }
+  }
+}

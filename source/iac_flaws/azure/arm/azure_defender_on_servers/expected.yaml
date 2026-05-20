@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: azure_defender_on_servers
+  endLine: 11
+  explanation: Azure Security Center Defender is off for servers
+  file: azure_defender_on_servers/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.VirtualMachines

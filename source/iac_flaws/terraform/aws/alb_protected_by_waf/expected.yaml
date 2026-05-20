@@ -1,0 +1,22 @@
+fail:
+- beginLine: 29
+  detector: alb_protected_by_waf
+  endLine: 31
+  file: alb_protected_by_waf/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_lb.lb_bad_1
+- beginLine: 39
+  detector: alb_protected_by_waf
+  endLine: 40
+  file: alb_protected_by_waf/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_lb.lb_bad_2
+- beginLine: 43
+  detector: alb_protected_by_waf
+  endLine: 45
+  file: alb_protected_by_waf/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_alb.alb_bad_1

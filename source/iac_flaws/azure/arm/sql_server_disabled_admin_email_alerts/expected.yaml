@@ -1,0 +1,9 @@
+fail:
+- beginLine: 13
+  detector: sql_server_disabled_admin_email_alerts
+  endLine: 20
+  explanation: MSSQL servers do not have email service and co-administrators enabled
+  file: sql_server_disabled_admin_email_alerts/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad/Default

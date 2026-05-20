@@ -1,0 +1,17 @@
+fail:
+- beginLine: 1
+  detector: sql_server_auditing_enabled
+  endLine: 9
+  explanation: Azure SQL server auditing is disabled
+  file: sql_server_auditing_enabled/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_sql_server.bad
+- beginLine: 11
+  detector: sql_server_auditing_enabled
+  endLine: 19
+  explanation: Azure SQL server auditing is disabled
+  file: sql_server_auditing_enabled/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_mssql_server.bad

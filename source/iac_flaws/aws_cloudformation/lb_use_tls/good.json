@@ -1,0 +1,20 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::ElasticLoadBalancingV2::Listener",
+      "Properties": {
+        "LoadBalancerArn": {
+          "Ref": "ApplicationLoadBalancer"
+        },
+        "Port": 443,
+        "Protocol": "HTTPS",
+        "Certificates": [
+          {
+            "CertificateArn": "test-cert"
+          }
+        ],
+        "SslPolicy": "ELBSecurityPolicy-TLS-1-2-Ext-2018-06"
+      }
+    }
+  }
+}

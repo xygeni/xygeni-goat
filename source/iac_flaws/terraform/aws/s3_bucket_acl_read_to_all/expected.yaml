@@ -1,0 +1,17 @@
+fail:
+- beginLine: 3
+  detector: s3_bucket_acl_read_to_all
+  endLine: 3
+  explanation: S3 Bucket ACL allows public read access
+  file: s3_bucket_acl_read_to_all/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_s3_bucket.bad_0
+- beginLine: 13
+  detector: s3_bucket_acl_read_to_all
+  endLine: 13
+  explanation: S3 Bucket ACL allows public read access
+  file: s3_bucket_acl_read_to_all/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_s3_bucket.website

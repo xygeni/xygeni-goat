@@ -1,0 +1,11 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::Timestream::Database",
+      "Properties": {
+        "DatabaseName": "timestream",
+        "KmsKeyId": "kms-key-id"
+      }
+    }
+  }
+}

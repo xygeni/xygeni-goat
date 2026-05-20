@@ -1,0 +1,5 @@
+== Bad Dependencies
+
+This directory contains examples of bad configurations that may open the software to supply chain attacks, for example by allowing malicious dependencies injection.
+
+Add a directory for each misconfiguration, and then either `bad` / `good` directories (when the filenames need to have a fixed name, like `yarn.lock` or `package.json`), or files with `.bad` / `.good` suffixes in the filename, before the extension.

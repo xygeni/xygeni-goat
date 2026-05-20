@@ -1,0 +1,10 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::ElastiCache::ReplicationGroup",
+      "Properties": {
+        "AtRestEncryptionEnabled": true
+      }
+    }
+  }
+}

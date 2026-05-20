@@ -1,0 +1,23 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": {
+          "Fn::Sub": "encryptedbucket-${AWS::Region}-${AWS::AccountId}"
+        },
+        "BucketEncryption": {
+          "ServerSideEncryptionConfiguration": [
+            {
+              "ServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "aws:kms",
+                "KMSMasterKeyID": "KMS-KEY-ARN"
+              }
+            }
+          ]
+        }
+      },
+      "DeletionPolicy": "Delete"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 6
+  detector: security_center_contact_email_alerts
+  endLine: 6
+  explanation: Send email notification for high severity alerts is not enabled
+  file: security_center_contact_email_alerts/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_security_center_contact.bad

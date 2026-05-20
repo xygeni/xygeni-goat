@@ -1,0 +1,23 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::ElasticLoadBalancingV2::LoadBalancer",
+      "Properties": {
+        "LoadBalancerAttributes": [
+          {
+            "Key": "idle_timeout.timeout_seconds",
+            "Value": "180"
+          },
+          {
+            "Key": "routing.http2.enabled",
+            "Value": true
+          },
+          {
+            "Key": "deletion_protection.enabled",
+            "Value": true
+          }
+        ]
+      }
+    }
+  }
+}

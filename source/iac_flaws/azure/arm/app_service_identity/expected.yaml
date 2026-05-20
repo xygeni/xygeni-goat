@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: app_service_identity
+  endLine: 11
+  explanation: App Service is not registered with an Azure Active Directory account
+  file: app_service_identity/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

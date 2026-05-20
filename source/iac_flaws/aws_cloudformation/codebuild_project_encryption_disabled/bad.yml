@@ -1,0 +1,9 @@
+Resources:
+  Bad:
+    Type: AWS::CodeBuild::Project
+    Properties:
+      Artifacts:
+        EncryptionDisabled: True
+        Location: MyS3BucketName
+        Name: /
+        Type: S3

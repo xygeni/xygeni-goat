@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: s3_encrypted_cmk
+  endLine: 10
+  explanation: S3 buckets are not encrypted with KMS
+  file: s3_encrypted_cmk/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

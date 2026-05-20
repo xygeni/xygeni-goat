@@ -1,0 +1,62 @@
+fail:
+- beginLine: 5
+  detector: launch_config_ebs_unencrypted
+  endLine: 5
+  explanation: Launch configurations do not have encrypted EBS volumes
+  file: launch_config_ebs_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_instance.fail
+- beginLine: 12
+  detector: launch_config_ebs_unencrypted
+  endLine: 12
+  explanation: Launch configurations do not have encrypted EBS volumes - no encrypted
+    attribute, defaults to false
+  file: launch_config_ebs_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_instance.fail2
+- beginLine: 31
+  detector: launch_config_ebs_unencrypted
+  endLine: 31
+  explanation: Launch configurations do not have encrypted EBS volumes
+  file: launch_config_ebs_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_instance.fail3
+- beginLine: 35
+  detector: launch_config_ebs_unencrypted
+  endLine: 46
+  explanation: Launch configurations do not have encrypted EBS volumes - TF will create
+    unencrypted EBS root by default if root_block_device is omitted
+  file: launch_config_ebs_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_instance.fail4
+- beginLine: 48
+  detector: launch_config_ebs_unencrypted
+  endLine: 52
+  explanation: Launch configurations do not have encrypted EBS volumes - TF will create
+    unencrypted EBS root by default if root_block_device is omitted
+  file: launch_config_ebs_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_instance.fail5
+- beginLine: 60
+  detector: launch_config_ebs_unencrypted
+  endLine: 65
+  explanation: Launch configurations do not have encrypted EBS volumes - TF will create
+    unencrypted EBS root by default if root_block_device is omitted
+  file: launch_config_ebs_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_instance.fail_empty_root_list
+- beginLine: 67
+  detector: launch_config_ebs_unencrypted
+  endLine: 78
+  explanation: Launch configurations do not have encrypted EBS volumes - TF will create
+    unencrypted EBS root by default if root_block_device is omitted
+  file: launch_config_ebs_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_instance.fail_empty_ebs_list

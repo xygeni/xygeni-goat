@@ -1,0 +1,17 @@
+fail:
+- beginLine: 1
+  detector: unpinned_version_base_image
+  endLine: 1
+  explanation: Unpinned version for base image
+  file: unpinned_version_base_image/bad/Dockerfile
+  framework: dockerfile
+  provider: docker
+  resource: alpine
+- beginLine: 3
+  detector: unpinned_version_base_image
+  endLine: 3
+  explanation: Unpinned version for base image
+  file: unpinned_version_base_image/bad/Dockerfile
+  framework: dockerfile
+  provider: docker
+  resource: alpine:latest

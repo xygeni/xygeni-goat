@@ -1,0 +1,25 @@
+fail:
+- beginLine: 1
+  detector: guard_duty_not_enabled_org_level
+  endLine: 3
+  explanation: GuardDuty detector not_ok has no organization configuration
+  file: guard_duty_not_enabled_org_level/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_guardduty_detector.not_ok
+- beginLine: 10
+  detector: guard_duty_not_enabled_org_level
+  endLine: 10
+  explanation: GuardDuty organization configuration example_2 has auto_enable = false
+  file: guard_duty_not_enabled_org_level/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_guardduty_organization_configuration.example_2
+- beginLine: 9
+  detector: guard_duty_not_enabled_org_level
+  endLine: 12
+  explanation: GuardDuty organization configuration has 1 misconfiguration(s)
+  file: guard_duty_not_enabled_org_level/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_guardduty_organization_configuration.example_2

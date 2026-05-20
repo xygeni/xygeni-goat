@@ -1,0 +1,10 @@
+fail:
+- beginLine: 5
+  detector: front_door_waf_policy_rules
+  endLine: 39
+  explanation: Front Door WAF has essential rules disabled - JAVA group has essential
+    rule 944240 disabled or not Block/Redirect
+  file: front_door_waf_policy_rules/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

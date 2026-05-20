@@ -1,0 +1,17 @@
+fail:
+- beginLine: 6
+  detector: iam_admin_policy
+  endLine: 14
+  explanation: IAM policy with full wildcard administrative privileges
+  file: iam_admin_policy/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: data.aws_iam_policy_document.fail
+- beginLine: 20
+  detector: iam_admin_policy
+  endLine: 27
+  explanation: IAM policy with full wildcard administrative privileges
+  file: iam_admin_policy/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: data.aws_iam_policy_document.no_effect

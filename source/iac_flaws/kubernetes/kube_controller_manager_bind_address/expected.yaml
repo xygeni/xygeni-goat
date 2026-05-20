@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: kube_controller_manager_bind_address
+  endLine: 4
+  explanation: Ensure that the --bind-address argument is set to 127.0.0.1
+  file: kube_controller_manager_bind_address/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: s3_bucket_public_access_block
+  endLine: 5
+  explanation: S3 bucket has block public ACLs disabled
+  file: s3_bucket_public_access_block/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

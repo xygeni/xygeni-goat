@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: etcd_auto_tls_not_enabled
+  endLine: 4
+  explanation: Ensure that the --auto-tls argument is not set to true
+  file: etcd_auto_tls_not_enabled/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

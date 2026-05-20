@@ -1,0 +1,9 @@
+fail:
+- beginLine: 1
+  detector: front_door_waf
+  endLine: 41
+  explanation: Azure front door does not have WAF enabled
+  file: front_door_waf/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_frontdoor.fail

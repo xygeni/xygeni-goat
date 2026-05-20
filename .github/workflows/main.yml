@@ -1,0 +1,23 @@
+name: Xygeni SAST
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Instalar e executar Xygeni SAST
+        run: |
+          curl -sSfL https://get.xygeni.io/latest/scanner/get-xygeni.sh | bash
+          # O parâmetro -d . garante que a raiz inteira será escaneada
+          ~/.xygeni/xygeni sast -n xygeni-goat -d . --upload
+        env:
+          XYGENI_URL: https://api.xygeni.io
+          XYGENI_TOKEN: ${{ secrets.XYGENI_TOKEN }}

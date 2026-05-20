@@ -1,0 +1,10 @@
+fail:
+- beginLine: 5
+  detector: app_gateway_waf
+  endLine: 15
+  explanation: Azure application gateway does not have WAF enabled - Web Application
+    Firewall is not enabled
+  file: app_gateway_waf_policy/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

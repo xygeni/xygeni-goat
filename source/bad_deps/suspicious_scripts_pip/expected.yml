@@ -1,0 +1,6 @@
+fail:
+  - beginLine: 9
+    code: "easyIoCtl==1.2.2"
+    detector: malware_dependency
+    endLine: 9
+    file: setup.py

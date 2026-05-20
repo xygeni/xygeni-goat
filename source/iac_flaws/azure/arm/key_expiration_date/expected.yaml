@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: key_expiration_date
+  endLine: 16
+  explanation: Ensure all keys have an expiration date
+  file: key_expiration_date/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

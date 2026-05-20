@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: lb_deletion_disabled
+  endLine: 3
+  explanation: Load Balancer has deletion protection disabled
+  file: lb_deletion_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

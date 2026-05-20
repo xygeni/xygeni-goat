@@ -1,0 +1,12 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::Glue::DevEndpoint",
+      "Properties": {
+        "EndpointName": "example",
+        "RoleArn": "arn:aws:iam::123456789012:role/role",
+        "SecurityConfiguration": "security-conf"
+      }
+    }
+  }
+}

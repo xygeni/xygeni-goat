@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: kms_key_policy_without_wildcard
+  endLine: 15
+  explanation: KMS key policy contains wildcard (*) principal
+  file: kms_key_policy_without_wildcard/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

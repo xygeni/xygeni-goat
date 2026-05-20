@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: cloudfront_tls_version
+  endLine: 6
+  explanation: Verify CloudFront Distribution Viewer Certificate is using TLS v1.2
+  file: cloudfront_tls_version/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

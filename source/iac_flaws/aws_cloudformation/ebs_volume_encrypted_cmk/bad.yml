@@ -1,0 +1,5 @@
+Resources:
+  Bad:
+    Type: AWS::EC2::Volume
+    Properties:
+      Encrypted: true

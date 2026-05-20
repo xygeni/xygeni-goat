@@ -1,0 +1,6 @@
+fail:
+  - dependency: "net.jcip:jcip-annotations:1.0"
+    dependency_path: "info.debatty.java-string-similarity:2.0.0 -> net.jcip:jcip-annotations:1.0"
+    detector: anomaly
+    direct_dependency: false
+    file: pom.xml

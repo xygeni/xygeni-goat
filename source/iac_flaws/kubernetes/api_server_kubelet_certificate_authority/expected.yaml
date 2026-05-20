@@ -1,0 +1,10 @@
+fail:
+- beginLine: 4
+  detector: api_server_kubelet_certificate_authority
+  endLine: 4
+  explanation: Ensure that the --kubelet-certificate-authority argument is set as
+    appropriate
+  file: api_server_kubelet_certificate_authority/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

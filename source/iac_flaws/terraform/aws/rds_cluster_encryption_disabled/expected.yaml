@@ -1,0 +1,17 @@
+fail:
+- beginLine: 3
+  detector: rds_cluster_encryption_disabled
+  endLine: 7
+  explanation: AWS RDS DB cluster encryption is disabled - no storage_encrypted attribute
+  file: rds_cluster_encryption_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_db_instance.default
+- beginLine: 14
+  detector: rds_cluster_encryption_disabled
+  endLine: 14
+  explanation: AWS RDS DB cluster encryption is disabled
+  file: rds_cluster_encryption_disabled/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_db_instance.disabled

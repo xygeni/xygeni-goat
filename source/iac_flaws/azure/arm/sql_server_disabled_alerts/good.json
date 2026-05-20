@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.Sql/servers/databases",
+      "apiVersion": "2020-08-01-preview",
+      "name": "good",
+      "properties": {
+        "state": "[parameters('transparentDataEncryption')]"
+      },
+      "resources": [
+        {
+          "type": "securityAlertPolicies",
+          "apiVersion": "2022-05-01-preview",
+          "name": "Default",
+          "properties": {
+            "state": "Enabled",
+            "emailAddresses": "[variables('emailAddresses')]",
+            "emailAccountAdmins": "Enabled"
+          }
+        }
+      ]
+    }
+  ]
+}

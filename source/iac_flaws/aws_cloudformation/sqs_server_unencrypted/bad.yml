@@ -1,0 +1,7 @@
+Resources:
+  Bad:
+    Type: AWS::SQS::Queue
+    Properties:
+      RedrivePolicy:
+        deadLetterTargetArn: "example_arn"
+        maxReceiveCount: 5

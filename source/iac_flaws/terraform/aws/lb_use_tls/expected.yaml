@@ -1,0 +1,46 @@
+fail:
+- beginLine: 3
+  detector: lb_use_tls
+  endLine: 12
+  explanation: Load balancer is using insecure TLS policy - HTTP listener does not
+    redirect to HTTPS
+  file: lb_use_tls/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_lb_listener.http
+- beginLine: 18
+  detector: lb_use_tls
+  endLine: 18
+  explanation: 'Load balancer is using insecure TLS policy - Insecure TLS policy:
+    ELBSecurityPolicy-2016-08'
+  file: lb_use_tls/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_lb_listener.https_2016
+- beginLine: 31
+  detector: lb_use_tls
+  endLine: 31
+  explanation: 'Load balancer is using insecure TLS policy - Insecure TLS policy:
+    ELBSecurityPolicy-FS-1-1-2019-08'
+  file: lb_use_tls/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_lb_listener.tls_fs_1_1
+- beginLine: 44
+  detector: lb_use_tls
+  endLine: 44
+  explanation: 'Load balancer is using insecure TLS policy - Insecure TLS policy:
+    ELBSecurityPolicy-TLS-1-1-2019-08'
+  file: lb_use_tls/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_alb_listener.tls_tls_1_1
+- beginLine: 55
+  detector: lb_use_tls
+  endLine: 66
+  explanation: Load balancer is using insecure TLS policy - HTTP listener does not
+    redirect to HTTPS
+  file: lb_use_tls/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_lb_listener.cognito

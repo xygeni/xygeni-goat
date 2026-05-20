@@ -1,0 +1,9 @@
+fail:
+- beginLine: 1
+  detector: azure_security_center_standard_pricing
+  endLine: 3
+  explanation: Ensure that standard pricing tier is selected
+  file: azure_security_center_standard_pricing/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_security_center_subscription_pricing.free

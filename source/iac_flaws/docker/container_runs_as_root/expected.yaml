@@ -1,0 +1,9 @@
+fail:
+- beginLine: 7
+  detector: container_runs_as_root
+  endLine: 7
+  explanation: Container runs as root - Privileged user root found
+  file: container_runs_as_root/bad/Dockerfile
+  framework: dockerfile
+  provider: docker
+  resource: alpine:3.16.3.USER

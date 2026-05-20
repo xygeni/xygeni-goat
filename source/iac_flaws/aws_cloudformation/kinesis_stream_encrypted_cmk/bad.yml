@@ -1,0 +1,7 @@
+Resources:
+  Bad:
+    Type: AWS::Kinesis::Stream
+    Properties:
+      Name: MyKinesisStream
+      RetentionPeriodHours: 168
+      ShardCount: 3

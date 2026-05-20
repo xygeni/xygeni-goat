@@ -1,0 +1,10 @@
+fail:
+- beginLine: 6
+  detector: front_door_waf_policy
+  endLine: 6
+  explanation: Azure front door does not use WAF in Detection or Prevention modes
+    - FrontDoor Firewall Policy is not enabled
+  file: front_door_waf_policy/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_frontdoor_firewall_policy.bad

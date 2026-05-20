@@ -1,0 +1,9 @@
+fail:
+- beginLine: 3
+  detector: appsync_logging_disabled
+  endLine: 6
+  explanation: Ensure AppSync has Logging enabled
+  file: appsync_logging_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

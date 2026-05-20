@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: ebs_volume_encrypted_cmk
+  endLine: 5
+  explanation: Ensure EBS Volume is encrypted by KMS using a customer managed Key
+    (CMK)
+  file: ebs_volume_encrypted_cmk/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

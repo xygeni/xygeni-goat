@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: ec2_credentials
+  endLine: 14
+  explanation: 'EC2 user data exposes secrets - Found some secrets in the resource:
+    AWS_ACCESS_KEY_ID'
+  file: ec2_credentials/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

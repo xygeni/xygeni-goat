@@ -1,0 +1,42 @@
+fail:
+- beginLine: 3
+  detector: azure_instance_extensions
+  endLine: 19
+  explanation: Virtual Machine extensions are installed
+  file: azure_instance_extensions/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_linux_virtual_machine.default
+- beginLine: 38
+  detector: azure_instance_extensions
+  endLine: 38
+  explanation: Virtual Machine extensions are installed
+  file: azure_instance_extensions/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_linux_virtual_machine.enabled
+- beginLine: 41
+  detector: azure_instance_extensions
+  endLine: 57
+  explanation: Virtual Machine extensions are installed
+  file: azure_instance_extensions/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_windows_virtual_machine.default
+- beginLine: 76
+  detector: azure_instance_extensions
+  endLine: 76
+  explanation: Virtual Machine extensions are installed
+  file: azure_instance_extensions/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_windows_virtual_machine.enabled
+- beginLine: 116
+  detector: azure_instance_extensions
+  endLine: 116
+  explanation: Virtual Machine extensions are installed - Extension 'hostname' of
+    type CustomScript found
+  file: azure_instance_extensions/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_virtual_machine.fail

@@ -1,0 +1,13 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::ECR::Repository",
+      "Properties": {
+        "RepositoryName": "test",
+        "ImageScanningConfiguration": {
+          "ScanOnPush": true
+        }
+      }
+    }
+  }
+}

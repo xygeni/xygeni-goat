@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: root_containers_psp
+  endLine: 4
+  explanation: Do not admit root containers
+  file: root_containers_psp/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

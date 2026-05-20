@@ -1,0 +1,17 @@
+fail:
+- beginLine: 3
+  detector: ebs_volume_unencrypted
+  endLine: 6
+  explanation: AWS EBS volume is not encrypted - no encrypted attribute
+  file: ebs_volume_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_ebs_volume.default
+- beginLine: 12
+  detector: ebs_volume_unencrypted
+  endLine: 12
+  explanation: AWS EBS volume is not encrypted
+  file: ebs_volume_unencrypted/bad/main.tf
+  framework: terraform
+  provider: aws
+  resource: aws_ebs_volume.disabled

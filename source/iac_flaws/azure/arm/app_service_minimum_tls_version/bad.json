@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.Web/sites",
+      "apiVersion": "2018-11-01",
+      "name": "bad",
+      "location": "[parameters('location')]",
+      "kind": "app",
+      "properties": {
+        "siteConfig": {
+          "http20Enabled": "true",
+          "minTlsVersion": "1.0"
+        }
+      }
+    }
+  ]
+}

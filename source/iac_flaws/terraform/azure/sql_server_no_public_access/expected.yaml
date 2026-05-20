@@ -1,0 +1,9 @@
+fail:
+- beginLine: 15
+  detector: sql_server_no_public_access
+  endLine: 21
+  explanation: SQL databases allow ingress from 0.0.0.0/0
+  file: sql_server_no_public_access/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_sql_firewall_rule.bad

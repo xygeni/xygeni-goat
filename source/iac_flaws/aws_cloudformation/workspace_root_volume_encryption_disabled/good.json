@@ -1,0 +1,13 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::WorkSpaces::Workspace",
+      "Properties": {
+        "UserName": "test",
+        "BundleId": "wsb-abc123456",
+        "DirectoryId": "d-abc123456",
+        "RootVolumeEncryptionEnabled": true
+      }
+    }
+  }
+}

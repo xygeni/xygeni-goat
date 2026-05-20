@@ -1,0 +1,8 @@
+== IaC Flaws
+
+This directory contains examples of IaC templates with weak or flawed configurations.
+
+Add a directory for each misconfiguration, and then either `bad` / `good` directories, or files with `.bad` / `.good` suffixes in the filename, before the extension.
+
+Example: `terraform/aws/alb_protected_by_waf/bad/main.tf` (and others in same directory as needed for a coherent Terraform configuration) vs. `terraform/aws/alb_protected_by_waf/good/main.tf`. All files belonging to the same configuration must be placed under the same directory.
+

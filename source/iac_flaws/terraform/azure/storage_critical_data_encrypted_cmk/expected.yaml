@@ -1,0 +1,9 @@
+fail:
+- beginLine: 40
+  detector: storage_critical_data_encrypted_cmk
+  endLine: 50
+  explanation: Storage for critical data not encrypted with Customer Managed Key
+  file: storage_critical_data_encrypted_cmk/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_storage_account.not_ok_storage_account

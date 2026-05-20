@@ -1,0 +1,9 @@
+fail:
+- beginLine: 5
+  detector: security_center_contact_email_alerts
+  endLine: 14
+  explanation: Send email notification for high severity alerts is not enabled
+  file: security_center_contact_email_alerts/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

@@ -1,0 +1,5 @@
+fail:
+  - dependency: "tensrflow"
+    detector: dependency_confusion
+    direct_dependency: true
+    file: setup.py

@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: kubelet_rotate_certificates
+  endLine: 4
+  explanation: Ensure that the --rotate-certificates argument is not set to false
+  file: kubelet_rotate_certificates/bad.yaml
+  framework: kubernetes
+  provider: kubernetes
+  resource: bad.yaml.bad

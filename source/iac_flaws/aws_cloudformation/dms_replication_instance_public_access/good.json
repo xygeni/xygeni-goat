@@ -1,0 +1,11 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::DMS::ReplicationInstance",
+      "Properties": {
+        "PubliclyAccessible": false,
+        "ReplicationInstanceClass": "dms.c4.large"
+      }
+    }
+  }
+}

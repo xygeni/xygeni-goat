@@ -1,0 +1,10 @@
+fail:
+- beginLine: 7
+  detector: sql_server_disabled_alerts
+  endLine: 7
+  explanation: 'Azure SQL Server threat detection alerts are not enabled for all threat
+    types - Alerts disabled: Sql_Injection, Data_Exfiltration'
+  file: sql_server_disabled_alerts/bad/main.tf
+  framework: terraform
+  provider: azure
+  resource: azurerm_mssql_server_security_alert_policy.bad

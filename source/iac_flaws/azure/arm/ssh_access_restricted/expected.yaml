@@ -1,0 +1,9 @@
+fail:
+- beginLine: 4
+  detector: ssh_access_restricted
+  endLine: 24
+  explanation: SSH Internet access is not restricted
+  file: ssh_access_restricted/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

@@ -1,0 +1,10 @@
+fail:
+- beginLine: 3
+  detector: ecs_task_efs_volumes_encryption_disabled
+  endLine: 8
+  explanation: Ensure Encryption in transit is enabled for EFS volumes in ECS Task
+    definitions
+  file: ecs_task_efs_volumes_encryption_disabled/bad.yml
+  framework: aws_cloudformation
+  provider: aws
+  resource: bad.yml.Bad

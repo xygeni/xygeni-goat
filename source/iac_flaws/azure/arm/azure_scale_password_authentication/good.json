@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "resources": [
+    {
+      "type": "Microsoft.Compute/virtualMachineScaleSets",
+      "apiVersion": "2020-12-01",
+      "name": "good",
+      "location": "westeurope",
+      "sku": {
+        "name": "Standard_DS1_v2",
+        "tier": "Standard",
+        "capacity": 2
+      },
+      "zones": [
+        "1"
+      ],
+      "properties": {
+        "singlePlacementGroup": true,
+        "upgradePolicy": {
+          "mode": "Automatic"
+        },
+        "scaleInPolicy": {
+          "rules": [
+            "Default"
+          ]
+        },
+        "virtualMachineProfile": {
+          "osProfile": {
+            "linuxConfiguration": {
+              "disablePasswordAuthentication": true
+            },
+            "secrets": []
+          },
+          "storageProfile": {
+            "osDisk": {
+              "osType": "Ubuntu",
+              "createOption": "FromImage",
+              "caching": "ReadWrite",
+              "managedDisk": {
+                "storageAccountType": "StandardSSD_LRS"
+              },
+              "diskSizeGB": 127
+            },
+            "imageReference": {
+              "publisher": "Canonical",
+              "sku": "Ubuntu-18.1",
+              "version": "latest"
+            }
+          }
+        },
+        "overprovision": false,
+        "doNotRunExtensionsOnOverprovisionedVMs": false,
+        "platformFaultDomainCount": 5
+      }
+    }
+  ]
+}

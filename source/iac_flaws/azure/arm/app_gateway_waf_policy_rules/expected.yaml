@@ -1,0 +1,10 @@
+fail:
+- beginLine: 5
+  detector: app_gateway_waf_policy_rules
+  endLine: 43
+  explanation: 'Application Gateway WAF has essential rules disabled - REQUEST-944-APPLICATION-ATTACK-JAVA
+    group disables essential rules: 944240'
+  file: app_gateway_waf_policy_rules/bad.json
+  framework: arm
+  provider: azure
+  resource: bad.bad

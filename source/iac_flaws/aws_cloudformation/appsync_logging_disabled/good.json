@@ -1,0 +1,15 @@
+{
+  "Resources": {
+    "Good": {
+      "Type": "AWS::AppSync::GraphQLApi",
+      "Properties": {
+        "Name": "dummy",
+        "AuthenticationType": "API_KEY",
+        "LogConfig": {
+          "CloudWatchLogsRoleArn": "iam_role_arn",
+          "FieldLogLevel": "ERROR"
+        }
+      }
+    }
+  }
+}

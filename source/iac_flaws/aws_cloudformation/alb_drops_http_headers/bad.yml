@@ -1,0 +1,6 @@
+Resources:
+  Bad:
+    Type: AWS::ElasticLoadBalancingV2::LoadBalancer
+    Properties:
+      Name: test
+      Type: "application"
